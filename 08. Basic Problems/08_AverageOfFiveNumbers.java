@@ -32,8 +32,8 @@ public class AverageOfFiveNumbers {
         int d = sc.nextInt();
         int e = sc.nextInt();
         
-        double avg = (double)((a + b + c + d + e) / 5);
+        float avg = (a + b + c + d + e) / 5.0f;
         
-        System.out.println();
+        System.out.printf("%.2f", avg);
     }
 }
