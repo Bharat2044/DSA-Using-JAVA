@@ -38,7 +38,7 @@ Clearly, among 1000 and 10000, 10000 is maximum.
 
 import java.util.Scanner;
 
-public class MaxOfTwo {
+public class MaximumOfTwo {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
