@@ -43,7 +43,7 @@ Explanation 2:
 
 import java.util.Scanner;
 
-public class ElectricBill {
+public class ElectricityBill {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int unit = sc.nextInt();
