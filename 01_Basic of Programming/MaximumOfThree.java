@@ -41,7 +41,7 @@ Clearly, among 1000, 10000 and 100000, 100000 is maximum.
 
 import java.util.Scanner;
 
-public class MaxOfThree {
+public class MaximumOfThree {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
