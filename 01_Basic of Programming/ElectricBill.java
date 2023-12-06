@@ -54,13 +54,13 @@ public class ElectricBill. {
             amount = unit*0.50;
         }
         else if(unit <= 150) {
-            amount = 25 + (unit-50)*0.75;
+            amount = 25 + (unit-50)*0.75;  // amount = (50*0.50) + (unit-50)*0.75;
         }
         else if(unit <= 250) {
-            amount = 100 + (unit-150)*1.20;
+            amount = 100 + (unit-150)*1.20;  // amount = (50*0.50) +(100*0.75) + (unit-150)*1.20;
         }
         else {
-            amount = 220 + (unit-250)*1.50;
+            amount = 220 + (unit-250)*1.50;  // amount = (50*0.50) +(100*0.75) +(100*1.20) + (unit-250)*1.50;
         }
         
         int totalAmount = (int)(amount + amount*0.20);
