@@ -1,7 +1,7 @@
 /*
 Problem Description:
-You are given two integers A and B. You have to find the value of AB.
-NOTE: The value of AB will always be less than or equal to 109.
+You are given two integers A and B. You have to find the value of A^B.
+NOTE: The value of A^B will always be less than or equal to 10^9.
 
 Problem Constraints:
 1 <= A, B <= 1000 
