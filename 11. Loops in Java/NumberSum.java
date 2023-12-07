@@ -39,12 +39,12 @@ public class NumberSum {
         int a = sc.nextInt();
         
         // 2nd Approach => TC = O(1), SC = O(1)
-        int sum = a*(a+1)/2;
+        long sum = (long)a*(a+1)/2;
         System.out.println(sum);
         
         /*
         // 1st Approach =>  TC = O(a), SC = O(1)
-        int sum = 0;
+        long sum = 0;
         for(int i=1; i<=a; i++) {
             sum += i;
         }
