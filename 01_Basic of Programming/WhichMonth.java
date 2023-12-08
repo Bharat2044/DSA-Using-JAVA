@@ -35,7 +35,7 @@ Clearly, June is the 6th month.
 
 import java.util.Scanner;
 
-public class WhichYear {
+public class WhichMonth {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
