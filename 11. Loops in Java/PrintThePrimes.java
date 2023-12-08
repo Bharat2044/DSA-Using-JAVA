@@ -34,7 +34,7 @@ Prime numbers between [1, 10] are (2, 3, 5, 7)
 
 import java.util.Scanner;
 
-public class CountTheDigits {
+public class PrintThePrimes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
