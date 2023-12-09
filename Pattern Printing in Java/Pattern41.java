@@ -11,7 +11,7 @@ n = 5
 
 import java.util.Scanner;
 
-public class Pattern40 {
+public class Pattern41 {
   
     public static int factorial(int n) {
         int fact = 1;
