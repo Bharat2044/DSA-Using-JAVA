@@ -1,9 +1,8 @@
 import java.util.Scanner;
 
-public class DecimalToBinary { 
+public class AreaOfSquare { 
 
-    public static float areaOfSquare(float a) {
-        
+    public static float areaOfSquare(float a) {        
         return (a * a);
     }
     
