@@ -1,6 +1,7 @@
 public class VarArgsEx1 {
 
   	static void fun(int... a) {
+  	  System.out.println("a = " + a);
     	System.out.println("Number of arguments: "
     					+ a.length);
 
