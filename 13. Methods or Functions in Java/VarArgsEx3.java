@@ -2,14 +2,16 @@ import java.util.Arrays;
 
 public class VarArgsEx3 {
 
-    static void demo(int ...v) {
+    public static void demo(int ...v) {
         System.out.println("Length inside demo function = " + v.length);
         System.out.println(Arrays.toString(v));
         System.out.println();
     }
 
-    static void multiple(int a, int b, String ...v) {
+    // static void multiple(int a, String ...v, int b) // VarArgsEx3.java:11: error: varargs parameter must be the last parameter
+    public static void multiple(int a, int b, String ...v) {
         System.out.println("Length inside multiple function = " + v.length);
+        System.out.println("a * b = " + (a * b));
         
         System.out.println(Arrays.toString(v));
         
@@ -21,7 +23,7 @@ public class VarArgsEx3 {
         System.out.println();
     }
 
-    static void fun(int ...v) {
+    public static void fun(int ...v) {
         System.out.println("Length inside fun function = " + v.length);
         System.out.println();
     }
