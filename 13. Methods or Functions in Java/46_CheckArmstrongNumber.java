@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class CheckArmstrongNumber {
     
-    public static boolean isArmstrongNumber(int n) {
+    public static boolean isArmstrong(int n) {
          int sum = 0;
         int temp = n;
         
@@ -35,7 +35,7 @@ public class CheckArmstrongNumber {
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
         
-        if(isArmstrongNumber(n))
+        if(isArmstrong(n))
             System.out.println(n + " is an armstrong number.");
         else
             System.out.println(n + " is not an armstrong number.");
