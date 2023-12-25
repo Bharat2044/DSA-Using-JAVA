@@ -41,6 +41,8 @@ import java.util.Scanner;
 
 public class GreatestCommonDivisor { 
 
+    // 1st Approach
+    /*
     public static int gcd(int a, int b) {
         int ans = 1;
         int x = Math.min(a, b);
@@ -51,6 +53,21 @@ public class GreatestCommonDivisor {
         }
             
         return ans;
+    }
+    */
+    
+    // 2nd Approach
+    public static int gcd(int a, int b) {
+        int x, y;
+    
+        while(a > 0) {
+            x = b % a;
+            y = a;
+            a = x;
+            b = y;
+        }
+            
+        return b;
     }
     
     public static void main(String[] args) {   
