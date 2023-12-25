@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class ArmstrongNumberInRange {
     
-    public static boolean isArmstrongNumber(int n) {
+    public static boolean isArmstrong(int n) {
          int sum = 0;
         int temp = n;
         
@@ -22,7 +22,7 @@ public class ArmstrongNumberInRange {
     public static void armstrongNumberInRange(int a, int b) {
         
         for(int i=Math.min(a, b); i<=Math.max(a, b); i++) {
-            if(isArmstrongNumber(i))
+            if(isArmstrong(i))
                 System.out.print(i + "   ");
         }
     }
