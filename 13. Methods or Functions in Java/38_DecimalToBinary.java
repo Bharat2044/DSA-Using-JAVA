@@ -26,9 +26,28 @@ The binary form of 10 is given by -> 1010
 import java.util.Scanner;
 
 public class DecimalToBinary { 
-
+  
     public static int decimalToBinary(int a) {
-        int x = 0;
+        int ans = 0;
+        int i = 0;
+        
+        while(a > 0) {
+            int d = a % 2;
+            
+            ans = ans + (d * (int)(Math.pow(10, i)));
+            
+            i++;
+            
+            a >>= 1;    // a /= 2;
+        }
+            
+        return ans;
+    }  
+  
+  
+    // 2nd Approach
+    /*
+    public static int decimalToBinary(int a) {
         int ans = 0;
         int i = 1;
         
@@ -37,14 +56,14 @@ public class DecimalToBinary {
             
             ans = ans + (d * i);
             
-            x++;
             i *= 10;
             
-            a /= 2;
+            a >>= 1;    // a /= 2;
         }
             
         return ans;
     }    
+    */
     
     public static void main(String[] args) {   
         Scanner sc = new Scanner(System.in);
