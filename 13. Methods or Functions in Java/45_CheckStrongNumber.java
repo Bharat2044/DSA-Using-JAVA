@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class CheckStrongNumber {
     
     // Time Complexity: O(logn), Space Complexity: O(1)
-    public static boolean isStrongNumber(int n) {
+    public static boolean isStrong(int n) {
         int sum = 0, temp = n;
         
         while(n > 0) {
@@ -32,7 +32,7 @@ public class CheckStrongNumber {
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
         
-        if(isStrongNumber(n))
+        if(isStrong(n))
             System.out.println(n + " is a strong number.");
         else
             System.out.println(n + " is not a strong number.");
