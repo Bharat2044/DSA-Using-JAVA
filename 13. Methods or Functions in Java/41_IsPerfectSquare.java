@@ -36,7 +36,23 @@ import java.util.Scanner;
 public class IsPerfectSquare {
   
     public static boolean isPerfectSquare(int n) {
-        return ((n & (n-1)) == 0);
+        // 1st Approach
+        for (int i=1; i*i<=n; i++) {   
+            if((n%i==0) && (n/i==i)) {   
+                return true;   
+            }   
+        }   
+
+        return false;
+      
+        // 2nd Approach
+        /*
+        double sq = Math.sqrt(n);
+        return ((sq - (int)(sq)) == 0);
+        */
+        
+        // 3rd Approach
+        // return ((n & (n-1)) == 0);
     }
     
     public static void main(String[] args) {
