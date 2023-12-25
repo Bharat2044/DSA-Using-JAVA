@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class StrongNumberInRange {
     
-    public static boolean isStrongNumber(int n) {
+    public static boolean isStrong(int n) {
         int sum = 0, temp = n;
         
         while(n > 0) {
@@ -22,7 +22,7 @@ public class StrongNumberInRange {
     public static void strongNumberInRange(int a, int b) {
         
         for(int i=Math.min(a, b); i<=Math.max(a, b); i++) {
-            if(isStrongNumber(i))
+            if(isStrong(i))
                 System.out.print(i + "   ");
         }
     }
