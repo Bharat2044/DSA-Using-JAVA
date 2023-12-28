@@ -6,6 +6,19 @@ import java.util.Scanner;
 
 public class PythagoreanTripletChecker {
   
+    // 1st Approach
+    public static boolean isPythagoreanTriplet(int a, int b, int c) {
+        int x = a * a;
+        int y = b * b;
+        int z = c * c;
+        
+        boolean ans = ((x == y + z) || (y == z + x) || (z == x + y));
+
+        return ans;
+    }
+    
+    // 2nd Approach
+    /*
     public static boolean isPythagoreanTriplet(int a, int b, int c) {
         int min = Math.min(Math.min(a, b), c);
         int max = Math.max(Math.max(a, b), c);
@@ -14,6 +27,7 @@ public class PythagoreanTripletChecker {
         // Check the Pythagorean triplet condition
         return ((min * min + middle * middle) == (max * max));
     }
+    */
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
