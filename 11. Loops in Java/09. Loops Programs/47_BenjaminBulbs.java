@@ -10,10 +10,30 @@ public class BenjaminBulbs {
         Scanner sc = new Scanner(System.in);
       
         int n = sc.nextInt();
+        
+        
+        // 1st Approach => TC = O(n^2), SC = O(1)
+        /*
+        for(int i=1; i<=n; i++) {
+            boolean flag = false;
+            
+            for(int j=1; j<=n; j++) {
+                if(i % j == 0) {
+                    flag = !flag;
+                }
+            }
+            
+            if(flag == true) {
+                System.out.print(i + "  ");
+            }
+        }
+        */
 
+
+        // 2nd Approach => TC = O(sqrt(n)), SC = O(1)
         for(int i=1; i*i<=n; i++) {
             System.out.print((i * i) + "  ");
-        }        
+        }   
         
         sc.close();
     }
