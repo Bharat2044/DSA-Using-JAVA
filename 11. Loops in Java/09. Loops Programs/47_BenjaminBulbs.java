@@ -17,7 +17,7 @@ public class BenjaminBulbs {
         for(int i=1; i<=n; i++) {
             boolean flag = false;
             
-            for(int j=1; j<=n; j++) {
+            for(int j=1; j<=i; j++) {
                 if(i % j == 0) {
                     flag = !flag;
                 }
