@@ -1,6 +1,24 @@
 import java.util.Scanner;
 
 public class DecimalToAnyBase {
+    /*
+    public static int decimalToAnyBase(int n, int b) {
+        int x = 0;
+        int ans = 0;
+        
+        while(n != 0) {
+            int r = n % b;
+            
+            ans += r * (int)Math.pow(10, x);
+            
+            x++;
+            n /= b;
+        }
+        
+        return ans;
+    }
+    */
+    
     public static int decimalToAnyBase(int n, int b) {
         int p = 1;
         int ans = 0;
@@ -15,7 +33,7 @@ public class DecimalToAnyBase {
         }
         
         return ans;
-    }
+    }    
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
