@@ -51,7 +51,7 @@ public class CheckProfitOrLoss {
         }
         else {
             int loss = c - s;
-            System.out.println(1 + " " + loss);
+            System.out.println(-1 + " " + loss);
         }
     }
 }
