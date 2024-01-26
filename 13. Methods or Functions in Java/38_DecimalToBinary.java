@@ -27,6 +27,7 @@ import java.util.Scanner;
 
 public class DecimalToBinary { 
   
+    // 1st Approach
     public static int decimalToBinary(int a) {
         int ans = 0;
         int i = 0;
@@ -64,6 +65,17 @@ public class DecimalToBinary {
         return ans;
     }    
     */
+    
+    
+    // 3rd Approach => Using Recursion
+    /*public static int decimalToBinary(int a) {
+        if(a == 0)
+            return 0;
+            
+        return (a % 2) + 10 * decimalToBinary(a / 2);
+    }    
+    */
+    
     
     public static void main(String[] args) {   
         Scanner sc = new Scanner(System.in);
