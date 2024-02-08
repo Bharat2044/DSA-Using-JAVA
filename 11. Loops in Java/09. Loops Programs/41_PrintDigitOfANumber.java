@@ -11,12 +11,16 @@ public class PrintDigitOfANumber {
         int cnt = 0;
         int temp = n;
         
+        /*
         while(temp != 0) {
             cnt++;
             temp /= 10;
         }
         
         int div = (int)Math.pow(10, cnt-1);
+        */
+        
+        int div = (int)Math.pow(10, (int)Math.log10(n));
         
         while(div != 0) {
             int q = n / div;
