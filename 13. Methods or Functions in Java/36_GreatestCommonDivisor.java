@@ -57,18 +57,56 @@ public class GreatestCommonDivisor {
     */
     
     // 2nd Approach
+    /*
+    public static int gcd(int a, int b) {
+        int ans = 1;
+        int x = Math.min(a, b);
+	    
+	    for (int i = x; i >= 1; i--) {
+	        if(a % i == 0 && b % i == 0) {
+	            ans = i;
+	            break;
+	        }
+	    }
+	    
+	    return ans;
+    }
+    */
+    
+    
+    // 3rd Approach
+    /*
+    public static int gcd(int a, int b) {
+        int ans = 1;
+        int x = Math.min(a, b);
+    
+        for (int i = 1; i * i <= x; i++) {
+            if (a % i == 0 && b % i == 0) 
+                ans = i;
+    
+            if (a % (x/i)==0 && b % (x/i) == 0) {
+                ans = x/i;
+                break;
+            }
+        }
+            
+        return ans;
+    }
+    */
+    
+    // 4th Approach
     public static int gcd(int a, int b) {
         int x, y;
     
-        while(a > 0) {
-            x = b % a;
-            y = a;
-            a = x;
-            b = y;
+        while(a % b != 0) {
+            int r = a % b;
+            a = b;
+            b = r;
         }
             
         return b;
     }
+    
     
     public static void main(String[] args) {   
         Scanner sc = new Scanner(System.in);
@@ -79,5 +117,7 @@ public class GreatestCommonDivisor {
         int ans = gcd(a, b);
         
         System.out.println(ans);
+        
+        sc.close();
     }
 }
