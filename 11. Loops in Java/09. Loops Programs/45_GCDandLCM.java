@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class GCDandLCM {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+public class GCDandLCM { 
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
       
         int a = sc.nextInt();
         int b = sc.nextInt();
         
         
-        // 1st Approach => TC = O(t* min(a, b)), SC = O(1)
+        // 1st Approach => TC = O(min(a, b)), SC = O(1)
         /*
         int gcd = 1;
         int x = Math.min(a, b);
@@ -22,9 +22,27 @@ public class GCDandLCM {
         System.out.println("gcd = " + gcd);
         System.out.println("lcm = " + lcm);
         */
+        
+        
+        // 2nd Approach => TC = O(min(a, b)), SC = O(1)
+        /*
+        int gcd = 1;
+        int x = Math.min(a, b);
+	    
+	    for (int i = x; i >= 1; i--) {
+	        if(a % i == 0 && b % i == 0) {
+	            gcd = i;
+	            break;
+	        }
+	    }
+          
+        int lcm = (a * b) / gcd;
+        System.out.println("gcd = " + gcd);
+        System.out.println("lcm = " + lcm);
+        */
     
     
-        // 2nd Approach => TC = O(t * sqrt(min(a, b))), SC = O(1)
+        // 3rd Approach => TC = O(sqrt(min(a, b))), SC = O(1)
         /*
         int gcd = 1;
         int x = Math.min(a, b);
@@ -45,7 +63,7 @@ public class GCDandLCM {
         */
         
         
-        // 3rd Approach => TC = O(t* log(a, b)), SC = O(1)
+        // 4th Approach => TC = O(log(a, b)), SC = O(1)
         int x = a, y = b;
     
         while(x % y != 0) {
@@ -59,6 +77,8 @@ public class GCDandLCM {
         System.out.println("gcd = " + gcd);
         System.out.println("lcm = " + lcm);
         
+        
         sc.close();
-    }
+	}
 }
+
