@@ -15,7 +15,7 @@ public class AnyBaseSubtraction {
             int sub = borrow + d1 - d2;
             
             if(sub < 0) {
-              sub += 10;
+              sub += b;
               borrow = -1;
             }
             else  {
@@ -36,8 +36,16 @@ public class AnyBaseSubtraction {
         int n2 = sc.nextInt();
         int base = sc.nextInt();
         
-        int result = getDifference(n1, n2, base);
+        int x = Math.max(n1, n2);
+        int y = Math.min(n1, n2);
         
-        System.out.println(result);
+        int result = getDifference(x, y, base);
+        
+        if(n1 >= n2)
+            System.out.println(result);
+        else
+            System.out.println(-result);
+
+        sc.close();
     }
 }
