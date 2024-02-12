@@ -1,3 +1,6 @@
+//Question Link: https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/any-base-addition-official/ojquestion
+
+
 import java.util.Scanner;
 
 public class AnyBaseAddition {
@@ -12,16 +15,9 @@ public class AnyBaseAddition {
             n1 /= 10;
             n2 /= 10;
             
-            int digit = 0;
-            
-            if((d1 + d2 + carry) >= b) {
-                digit = (d1 + d2 + carry) % b;
-                carry = (d1 + d2 + carry) / b;
-            }
-            else {
-                digit = (d1 + d2 + carry);
-                carry = 0;
-            }
+            int sum = (d1 + d2 + carry);
+            carry = sum / b;
+            int digit = sum % b;
             
             ans += digit * pow;
             pow *= 10;
@@ -42,3 +38,4 @@ public class AnyBaseAddition {
         System.out.println(result);
     }
 }
+
