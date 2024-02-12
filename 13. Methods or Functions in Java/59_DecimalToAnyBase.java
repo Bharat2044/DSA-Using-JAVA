@@ -1,4 +1,4 @@
-// Question Link: https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/any-base-addition-official/ojquestion
+// Question Link: https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/decimal-to-any-base-official/ojquestion
 
 
 import java.util.Scanner;
