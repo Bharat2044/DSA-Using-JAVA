@@ -1,3 +1,5 @@
+// Question Link: https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/bar-chart-official/ojquestion
+
 /*
 i/p: n = 5
 arr = 2 3 1 4 5
