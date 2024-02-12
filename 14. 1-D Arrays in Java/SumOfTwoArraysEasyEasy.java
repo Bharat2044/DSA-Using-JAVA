@@ -10,7 +10,7 @@ o/p: 9 4 10 12 9
 
 import java.util.Scanner;
 
-public class SumOfTwoArrays {
+public class SumOfTwoArraysE {
   
     // TC = O(max(n1, n2)), SC = O(max(n1, n2))
     public static int[] sum(int[] arr1, int[] arr2) {
