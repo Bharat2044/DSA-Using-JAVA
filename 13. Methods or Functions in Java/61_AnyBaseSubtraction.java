@@ -1,6 +1,14 @@
 // Question Link: https://www.pepcoding.com/resources/online-java-foundation/function-and-arrays/any-base-subtraction-official/ojquestion
 
 
+/*
+i/p: n1 = 2000
+     n2 = 999
+     b = 10
+o/p: 1001
+*/
+
+
 import java.util.Scanner;
 
 public class AnyBaseSubtraction {
@@ -9,23 +17,23 @@ public class AnyBaseSubtraction {
         int ans = 0, pow = 1, borrow = 0;
         
         while(n1 > 0) {
-            int d1 = n1 % 10; // d1 = (n1 > 0) ? (n1 % 10) : 0;
-            int d2 = n2 % 10; // d2 = (n2 > 0) ? (n2 % 10) : 0;
+            int d1 = n1 % 10;   // extracting last digit of n1
+            int d2 = n2 % 10;   // extracting last digit of n2 
             
-            n1 /= 10;
-            n2 /= 10;
+            n1 /= 10;      // removing last diging of n1
+            n2 /= 10;      // removing last diging of n1
             
-            int sub = borrow + d1 - d2;
+            int d = (d1 - d2 - borrow);
             
-            if(sub < 0) {
-              sub += b;
-              borrow = -1;
+            if(d < 0) {
+                borrow = 1;
+                d = d + b;
             }
-            else  {
-              borrow = 0;
+            else {
+                borrow = 0;
             }
             
-            ans += sub * pow;
+            ans += d * pow;
             pow *= 10;
         }
         
@@ -52,3 +60,4 @@ public class AnyBaseSubtraction {
         sc.close();
     }
 }
+
