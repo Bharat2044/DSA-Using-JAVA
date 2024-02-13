@@ -6,24 +6,26 @@ import java.util.Scanner;
 public class AnyBaseAddition {
     
     public static int getSum(int n1, int n2, int b) {
-        int ans = 0, pow = 1, carry = 0;
+        int sum = 0, pow = 1, carry = 0;
         
         while(n1 > 0 || n2 > 0 || carry > 0) {
-            int d1 = n1 % 10; // d1 = (n1 > 0) ? (n1 % 10) : 0;
-            int d2 = n2 % 10; // d2 = (n2 > 0) ? (n2 % 10) : 0;
+            int d1 = n1 % 10;   // extracting last digit of n1
+            int d2 = n2 % 10;   // extracting last digit of n2 
             
-            n1 /= 10;
-            n2 /= 10;
+            n1 /= 10;      // removing last diging of n1
+            n2 /= 10;      // removing last diging of n1
             
-            int sum = (d1 + d2 + carry);
-            carry = sum / b;
-            int digit = sum % b;
+            // adding last digit of n1 and n2 and carry
+            int d = (d1 + d2 + carry);
             
-            ans += digit * pow;
+            carry = d / b;  // extracting carry
+            d = d % b;      // extracting last digit
+            
+            sum += d * pow;
             pow *= 10;
         }
         
-        return ans;
+        return sum;
     }
     
     public static void main(String[] args) {
