@@ -1,4 +1,4 @@
-public class CeilValue {
+public class AbsoluteValue {
     public static void main(String[] args) {
       
         System.out.println(Math.abs(75));  
