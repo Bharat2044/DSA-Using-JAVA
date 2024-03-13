@@ -1,4 +1,4 @@
-public class ReturnStatementEx1 {
+public class ReturnStatementEx2 {
   
     public static void print() {
         System.out.println("Hello");
