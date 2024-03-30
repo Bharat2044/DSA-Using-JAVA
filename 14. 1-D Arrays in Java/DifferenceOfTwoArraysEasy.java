@@ -1,25 +1,25 @@
 /*
 i/p: 
-n = 4
-arr1 = 4 5 6 2
-arr2 = 2 9 3 4
-o/p: 2 -4 3 -2
+n = 3
+arr1 = 5 6 2
+arr2 = 1 3 4
+o/p:  4 3 -2
 
-arr1 - arr2
+arr1 - arr2  &&  n1 == n2
 
 ------------------
-  4 | 5 | 6 | 2
-- 2 | 9 | 3 | 4
+  | 5 | 6 | 2
+- | 1 | 3 | 4
 ------------------
-  2  -4   3  -2
+    4   3   -2
 */
 
 
 import java.util.Scanner;
 
 public class DifferenceOfTwoArraysEasy {
-    
-    // TC = O(max(n)), SC = O(n)
+  
+    // TC = O(n), SC = O(n)
     public static int[] difference(int[] arr1, int[] arr2) {
       
         int n = arr1.length;
