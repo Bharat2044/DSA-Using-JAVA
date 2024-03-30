@@ -1,18 +1,34 @@
 /*
 i/p: 
+n1 = 4
+arr1 = 4 5 6 2
+n2 = 3
+arr2 = 9 3 4
+o/p: 4 -4 3 -2
+
+i/p: 
 n1 = 3
 arr1 = 4 9 7
 n2 = 5
 arr2 = 9 4 6 3 2
 o/p: 9 4 10 12 9
+
+arr1 - arr2  &&  n1 != n2
+
+------------------
+  4 | 5 | 6 | 2
++   | 9 | 3 | 4
+------------------
+  4   14  9   6
 */
 
 
 import java.util.Scanner;
 
-public class SumOfTwoArraysEasy {
+public class SumOfTwoArraysMedium {
   
-    // TC = O(max(n1, n2)), SC = O(max(n1, n2))
+    // Approach - 1: TC = O(max(n1, n2)), SC = O(max(n1, n2))
+    /*
     public static int[] sum(int[] arr1, int[] arr2) {
         int n = Math.max(arr1.length, arr2.length);
         int[] temp = new int[n];
@@ -42,6 +58,36 @@ public class SumOfTwoArraysEasy {
         
         return temp;
     }
+    */
+    
+    
+    // Approach - 2: TC = O(max(n1, n2)), SC = O(max(n1, n2))
+    public static int[] sum(int[] arr1, int[] arr2) {
+      
+        int n = Math.max(arr1.length, arr2.length);
+        int[] result = new int[n];
+        
+        int i = arr1.length - 1;
+        int j = arr2.length - 1;
+        int k = result.length - 1;
+        
+        while(k >= 0) {
+            if(i >= 0) {
+                result[k] = arr1[i];
+            }
+            
+            if(j >= 0) {
+                result[k] += arr2[j];
+            }
+            
+            i--;
+            j--;
+            k--;
+        }
+        
+        return result;
+    }
+    
     
     public static void main(String[] args) {   
         Scanner sc = new Scanner(System.in);
@@ -63,6 +109,7 @@ public class SumOfTwoArraysEasy {
         }
         
         int[] result = sum(arr1, arr2);
+        
         for(int i = 0; i < result.length; i++) {
             System.out.print(result[i] + "  ");
         }
