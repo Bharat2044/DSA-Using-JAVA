@@ -18,7 +18,7 @@ import java.util.Scanner;
 public class SumOfTwoArraysEasy {
   
     // TC = O(n), SC = O(n)
-    public static int[] difference(int[] arr1, int[] arr2) {
+    public static int[] sum(int[] arr1, int[] arr2) {
       
         int n = arr1.length;
         int[] result = new int[n];
@@ -49,7 +49,7 @@ public class SumOfTwoArraysEasy {
             arr2[i] = sc.nextInt();
         }
         
-        int[] result = difference(arr1, arr2);
+        int[] result = sum(arr1, arr2);
         
         for(int i = 0; i < result.length; i++) {
             System.out.print(result[i] + "  ");
