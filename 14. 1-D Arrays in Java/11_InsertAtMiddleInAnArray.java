@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class InsertAtLastInAnArray {
+public class InsertAtMiddleInAnArray {
   	
   	// TC = O(n), SC = O(n)
   	public static int[] insertAtMiddle(int[] arr, int x) {
