@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class UpdateFirstElementInAnArray {
+public class UpdateFirstElementOfAnArray {
   	
   	// TC = O(1), SC = O(1)
   	public static void updateFirstElement(int[] arr, int x) {
