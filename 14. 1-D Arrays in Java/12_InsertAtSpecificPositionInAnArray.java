@@ -48,13 +48,13 @@ public class InsertAtSpecificPositionInAnArray {
     		System.out.print("Enter the element you want to insert at specific position: ");
     		int x = sc.nextInt();
     		
-    		System.out.print("Before insert array elements are: ");
-    		printArray(arr);
-    		
     		if(pos <= 0 || pos > arr.length) {
     		    System.out.println("Enter a valid position");
     		    return;
     		}
+    		
+    		System.out.print("Before insert array elements are: ");
+    		printArray(arr);
     		
     		arr = insertAtSpecificPosition(arr, pos, x);
     		
