@@ -15,7 +15,7 @@ public class TakingArrayInput {
     			arr[i] = sc.nextInt();
     		}
     		
-    		System.out.print("Array elments are: ");
+    		System.out.print("Array elements are: ");
     		for(int i = 0; i < n; i++) {
     			  System.out.print(arr[i] + "  ");
     		}
