@@ -12,7 +12,6 @@ public class DeleteFromMiddleInAnArray {
     			      newArr[i] = arr[i];
     		    else
     		        newArr[i] = arr[i + 1];
-
     		}
     		
     		return newArr;
