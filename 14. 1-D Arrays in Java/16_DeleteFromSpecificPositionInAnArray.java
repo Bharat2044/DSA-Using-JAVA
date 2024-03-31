@@ -11,7 +11,6 @@ public class DeleteFromSpecificPositionInAnArray {
     			      newArr[i] = arr[i];
     		    else
     		        newArr[i] = arr[i + 1];
-
     		}
     		
     		return newArr;
