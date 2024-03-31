@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class DeleteFromBeginningInAnArray {
+public class DeleteFromLastInAnArray {
   	
   	// TC = O(n), SC = O(n)
-  	public static int[] deleteFromBegin(int[] arr) {
+  	public static int[] deleteFromLast(int[] arr) {
   	    int[] newArr = new int[arr.length - 1];
   
     		for (int i = 0; i < arr.length - 1;  i++) {
@@ -38,9 +38,8 @@ public class DeleteFromBeginningInAnArray {
     		
     		System.out.print("Before delete array elements are: ");
     		printArray(arr);
-    		
-    		
-    		arr = deleteFromBegin(arr);
+    		    		
+    		arr = deleteFromLast(arr);
     		
     		System.out.print("After  delete array elements are: ");
     		printArray(arr);
