@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ReverseArray {
+public class ReverseAnArray {
   
     public static void printArray(int[] arr) {
         
@@ -37,6 +37,7 @@ public class ReverseArray {
             int temp = arr[st];
             arr[st] = arr[end];
             arr[end] = temp;
+          
             st++;
             end--;
         }
