@@ -6,7 +6,7 @@ public class CheckPalindromeArray {
     public static boolean isPalindrome(int[] arr) {
         int st = 0, end = arr.length - 1;
     
-    		while (st < end) {
+    		while (st < end) { 
       			if (arr[st] != arr[end]) {
         				return false;
       			}
