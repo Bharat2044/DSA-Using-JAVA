@@ -9,7 +9,7 @@ public class LeftRotateByOnePosition {
     }
     
     // TC = O(n), SC = O(1)
-    public static void LeftRotateByOne(int[] arr) {
+    public static void leftRotateByOne(int[] arr) {
         int n = arr.length;
         int x = arr[0];
         
@@ -26,7 +26,7 @@ public class LeftRotateByOnePosition {
         System.out.println("Before left rotate by 1 position array are:");
         printArray(arr);
         
-        LeftRotateByOne(arr);
+        leftRotateByOne(arr);
 
         System.out.println("\nAfter left rotate by 1 position array are:");
         printArray(arr);
