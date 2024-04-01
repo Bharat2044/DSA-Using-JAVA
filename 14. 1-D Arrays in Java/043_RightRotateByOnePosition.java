@@ -23,12 +23,12 @@ public class RightRotateByOnePosition {
     public static void main(String[] args) {
         int arr[] = {1, 2, 3, 4, 5};
 
-        System.out.println("Before left rotate by 1 position array are:");
+        System.out.println("Before right rotate by 1 position array are:");
         printArray(arr);
         
         rightRotateByOne(arr);
 
-        System.out.println("\nAfter left rotate by 1 position array are:");
+        System.out.println("\nAfter right rotate by 1 position array are:");
         printArray(arr);
     }
 }
