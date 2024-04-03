@@ -128,6 +128,57 @@ public class ArrayListAllMethods {
         // subList(int fromIndex, int toIndex): This method returns a view of the portion of the ArrayList between the specified fromIndex (inclusive) and toIndex (exclusive).
         List<String> subList = list.subList(1, 4);
         System.out.println("\n\nSub-list1: " + subList);
+        
+        
+        // Iterating on ArrayList
+        System.out.println("\n\nIterating on ArrayList using for loop:");
+        for(int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i) + "  ");
+        }
+        
+        System.out.println("\n\nIterating on ArrayList using for-each loop:");
+        for(String x : list) {
+            System.out.print(x + "  ");
+        }
+        
+        System.out.println("\n\nIterating on ArrayList using iterator:");
+        Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            String ele = iterator.next();
+            System.out.print(ele + "  ");
+        }
+        
+        System.out.println("\n\nIterating on ArrayList using forEach() method:");
+        list.forEach(e -> {
+            System.out.print(e + "  ");
+        });
+        
+        System.out.println("\n\nIterating on ArrayList using forEachRemaining() method:");
+        Iterator<String> iterator1 = list.iterator();
+        iterator1.forEachRemaining(k -> {
+            System.out.print(k + "  ");
+        });
+
+        System.out.println("\n\nIterating on ArrayList using list-iterator:");
+        ListIterator<String> listIterator = list.listIterator();
+        while (listIterator.hasNext()) {
+            String e = listIterator.next();
+            System.out.print(e + "  ");
+        }
+        
+        System.out.println("\n\nIterating on ArrayList using list-iterator in reverse:");
+        // Get a ListIterator starting at the end of the list
+        ListIterator<String> iterator3 = list.listIterator(list.size());
+        
+        // Iterate over the list in reverse order
+        while (iterator3.hasPrevious()) {
+            String e2 = iterator3.previous();
+            System.out.print(e2 + "  ");
+        }
+
+
+        System.out.println("\n");
+        System.out.println(list.toString());
   
     }
 }
