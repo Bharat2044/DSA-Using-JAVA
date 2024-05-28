@@ -179,6 +179,5 @@ public class ArrayListAllMethods {
 
         System.out.println("\n");
         System.out.println(list.toString());
-  
     }
 }
