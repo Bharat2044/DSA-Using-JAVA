@@ -7,7 +7,7 @@ public class RightRotateByKTimes {
             
         System.out.println();
     }
-    
+     
     /*
     // Approach - 1: Using Rotate One by One => TC = O(n * k), SC = O(1)
     public static void rightRotateByOne(int[] arr) {
