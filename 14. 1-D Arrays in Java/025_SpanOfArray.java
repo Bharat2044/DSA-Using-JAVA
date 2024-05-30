@@ -7,7 +7,7 @@ o/p: 8
 Explanation: max = 12, min = 4 => 12 - 4 = 8
 */
 
-
+ 
 import java.util.Scanner;
 import java.util.Arrays;
 
