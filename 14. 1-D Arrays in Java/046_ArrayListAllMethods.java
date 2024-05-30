@@ -8,7 +8,7 @@ public class ArrayListAllMethods {
         // size(): This method returns the number of elements in the ArrayList.
         System.out.println("ArrayList Size: " + list.size());
         
-        
+      
         // add(E element): This method is used to add an element to the end of the ArrayList.
         list.add("A");
         list.add("B");
