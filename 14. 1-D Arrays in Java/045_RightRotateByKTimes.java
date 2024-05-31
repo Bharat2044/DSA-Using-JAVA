@@ -12,7 +12,7 @@ public class RightRotateByKTimes {
     // Approach - 1: Using Rotate One by One => TC = O(n * k), SC = O(1)
     public static void rightRotateByOne(int[] arr) {
         // Length of the array
-        int n = arr.length;
+        int n = arr.length; 
         
         // Store the last element of the array
         int x = arr[n - 1];
