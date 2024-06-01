@@ -16,7 +16,7 @@ public class RightRotateByKTimes {
         
         // Store the last element of the array
         int x = arr[n - 1];
-        
+         
         // Shift elements to the right by one position
         for (int i = n - 1; i >= 1; i--) {
             arr[i] = arr[i - 1];
