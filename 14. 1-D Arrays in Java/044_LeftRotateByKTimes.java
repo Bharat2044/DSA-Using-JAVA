@@ -7,7 +7,7 @@ public class LeftRotateByKTimes {
             System.out.print(arr[i] + "   ");
             
         System.out.println();
-    }
+    } 
     
     /*
     // Approach - 1: Using Rotate One by One => TC = O(n * k), SC = O(1)
