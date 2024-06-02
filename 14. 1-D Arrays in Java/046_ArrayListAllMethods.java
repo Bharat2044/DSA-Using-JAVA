@@ -11,7 +11,7 @@ public class ArrayListAllMethods {
       
         // add(E element): This method is used to add an element to the end of the ArrayList.
         list.add("A");
-        list.add("B"); 
+        list.add("B");  
         list.add("A"); 
         
         System.out.println("After added element: " + list);
