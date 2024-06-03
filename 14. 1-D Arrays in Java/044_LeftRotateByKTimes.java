@@ -1,5 +1,5 @@
 public class LeftRotateByKTimes {
-  
+   
     // printing the arrays
     public static void printArray(int[] arr) {
       
