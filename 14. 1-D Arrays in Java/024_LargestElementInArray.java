@@ -11,61 +11,78 @@ import java.util.Arrays;
 
 public class LargestElementInArray {
     /*
-    // 1st Approach: Brute Force => TC = O(n^2) , SC = O(1)
+    // 1st Approach: Brute Force => Time Complexity (TC) = O(n^2), Space Complexity (SC) = O(1)
     public static int getLargestElement(int[] arr) {
-      
-        for(int i = 0; i < arr.length; i++) {
+        // Iterate through each element in the array
+        for (int i = 0; i < arr.length; i++) {
             boolean flag = true;
             
-            for(int j = 0; j < arr.length; j++) {
-                if(arr[j] > arr[i]) {
-                    flag = false;
+            // Check if there's any element larger than the current element
+            for (int j = 0; j < arr.length; j++) {
+                if (arr[j] > arr[i]) {
+                    flag = false; // Found a larger element
                     break;
                 }
             }
             
-            if(flag == true)
+            // If no larger element was found, the current element is the largest
+            if (flag == true)
                 return arr[i];
         }
         
-        return -1;
-    }
-    */
-  
-    /*
-    // 2nd Approach: Using Sorting => TC = O(n * log(n)) , SC = O(1)
-    public static int getLargestElement(int[] arr) {
-        Arrays.sort(arr);
-        
-        return arr[arr.length-1];
+        return -1; // This return statement is just a fallback, should not be reached
     }
     */
     
-    // 3nd Approach: Optimal Approach => TC = O(n) , SC = O(1)
+    /*
+    // 2nd Approach: Using Sorting => Time Complexity (TC) = O(n * log(n)), Space Complexity (SC) = O(1)
     public static int getLargestElement(int[] arr) {
+        // Sort the array in ascending order
+        Arrays.sort(arr);
+        
+        // The largest element will be the last element in the sorted array
+        return arr[arr.length - 1];
+    }
+    */
+    
+    // 3rd Approach: Optimal Approach => Time Complexity (TC) = O(n), Space Complexity (SC) = O(1)
+    public static int getLargestElement(int[] arr) {
+        // Initialize max with the first element of the array
         int max = arr[0];
         
-        for(int i = 1; i < arr.length; i++) {
-            if(arr[i] > max)
+        // Iterate through the array starting from the second element
+        for (int i = 1; i < arr.length; i++) {
+            // Update max if the current element is larger
+            if (arr[i] > max)
                 max = arr[i];
         }
         
+        // Return the largest element
         return max;
     }
     
     public static void main(String[] args) {   
+        // Create a Scanner object to read input from the user
         Scanner sc = new Scanner(System.in);
         
+        // Read the size of the array
         int n = sc.nextInt();
+        
+        // Create an array of the given size
         int[] arr = new int[n];
         
-        for(int i = 0; i < arr.length; i++) {
+        // Read the elements of the array from the user
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
         
+        // Call the method to find the largest element in the array
         int ans = getLargestElement(arr);
+        
+        // Print the largest element
         System.out.println(ans);
         
+        // Close the Scanner object
         sc.close();
     }
 }
