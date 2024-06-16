@@ -15,73 +15,82 @@ import java.util.Scanner;
 
 public class DifferenceOfTwoArrays {
   
+    // Function to calculate the difference between two integer arrays (one - two)
+    // Time Complexity: O(n1) where n1 is the length of the first array
+    // Space Complexity: O(n1) for the result array
     public static int[] difference(int[] one, int[] two) {
+        // Initialize the result array with the same length as the first array
         int[] ans = new int[one.length];
         
+        // Pointers for traversing the arrays from the end
         int i = one.length - 1;
         int j = two.length - 1;
         int k = ans.length - 1;
         
-        int b = 0;  // borrow
-        while(k >= 0) {
-            int d = one[i] - b;
+        int b = 0;  // Variable to hold the borrow value
+      
+        // Loop through both arrays from the end to the start
+        while (k >= 0) {
+            int d = one[i] - b; // Start with the current value of the first array minus any borrow
             
-            if(j >= 0) {
+            // Subtract the value from the second array if the pointer is within bounds
+            if (j >= 0) {
                 d = d - two[j];
             }
             
-            if(d < 0) {
+            // If the result is negative, borrow from the next higher place value
+            if (d < 0) {
                 d = d + 10;
-                b = 1;
+                b = 1; // Set the borrow for the next iteration
             } else {
-                b = 0;
+                b = 0; // Reset the borrow if no borrow is needed
             }
             
-            ans[k] = d;
+            ans[k] = d; // Store the result in the result array
             
+            // Move the pointers
             i--;
             j--;
             k--;
         }
         
-        return ans;
+        return ans; // Return the result array
     }
     
-    public static void main(String[] args) {   
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
+        // Read the length and elements of the first array
         int n1 = sc.nextInt();
         int[] one = new int[n1];
-        
-        // taking array1 inputs
-        for(int i = 0; i < one.length; i++) {
+        for (int i = 0; i < one.length; i++) {
             one[i] = sc.nextInt();
         }
         
+        // Read the length and elements of the second array
         int n2 = sc.nextInt();
         int[] two = new int[n2];
-        
-        // taking array2 inputs
-        for(int i = 0; i < two.length; i++) {
+        for (int i = 0; i < two.length; i++) {
             two[i] = sc.nextInt();
         }
         
+        // Call the difference function to get the result array
         int[] result = difference(one, two);
         
-        // Don't print leading zeroes
+        // Print the result array, skipping any leading zeros
         int idx = 0;
-        while(idx < result.length) {
-            if(result[idx] != 0)
+        while (idx < result.length) {
+            if (result[idx] != 0) {
                 break;
-            else
+            } else {
                 idx++;
+            }
         }
         
-        for(int i = idx; i < result.length; i++) {
+        for (int i = idx; i < result.length; i++) {
             System.out.print(result[i] + "  ");
         }
         
-        sc.close();
+        sc.close(); // Close the scanner to free resources
     }
 }
-
