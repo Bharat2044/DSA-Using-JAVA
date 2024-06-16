@@ -14,7 +14,11 @@ import java.util.Scanner;
 
 public class GradeCalculator {
   
+    // Method to determine grade based on marks
+    // Time Complexity: O(1)
+    // Space Complexity: O(1)
     public static String getGrade(double marks) {
+        
         if (marks >= 91 && marks <= 100) {
             return "AA";
         } else if (marks >= 81 && marks <= 90) {
@@ -34,19 +38,24 @@ public class GradeCalculator {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+    
+        // Prompt user to enter marks
         System.out.print("Enter your marks (out of 100): ");
         double marks = sc.nextDouble();
         
+        // Check if the input marks are within the valid range
         if (marks >= 0 && marks <= 100) {
+            // Call the getGrade method to determine the grade
             String grade = getGrade(marks);
             
+            // Display the grade
             System.out.println("Your grade is: " + grade);
         } 
         else {
+            // Display an error message for invalid input
             System.out.println("Invalid input! Marks should be between 0 and 100.");
         }
             
-            sc.close();
+        sc.close();
     }
 }
