@@ -1,10 +1,13 @@
 public class RightRotateByKTimes {
    
+    // Method to print the elements of an array
     public static void printArray(int[] arr) {
-      
-        for (int i = 0; i < arr.length; i++)
+        // Iterate through the array and print each element followed by spaces
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + "   ");
-            
+        }
+       
+        // Move to the next line after printing all elements
         System.out.println();
     }
      
@@ -139,15 +142,19 @@ public class RightRotateByKTimes {
     
 
     public static void main(String[] args) {
+        // Initialize an array `arr` and an integer `k` for rotation
         int[] arr = {1, 2, 3, 4, 5, 6, 7};
         int k = 3;
 
-        System.out.println("Before right rotate by k position array are:");
+        // Print the array before rotation
+        System.out.println("Before right rotate by k position array:");
         printArray(arr);
         
+        // Perform right rotation of the array `arr` by `k` positions
         rightRotateByKPosition(arr, k);
 
-        System.out.println("\nAfter right rotate by k position array are:");
+        // Print the array after rotation
+        System.out.println("\nAfter right rotate by k position array:");
         printArray(arr);
     }
 }
