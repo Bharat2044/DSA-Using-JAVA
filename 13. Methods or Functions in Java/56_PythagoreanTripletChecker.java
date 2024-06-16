@@ -4,21 +4,14 @@
 
 import java.util.Scanner;
 
-public class PythagoreanTripletChecker {
-  
-    /**
-     * Checks if the given triplet (a, b, c) forms a Pythagorean triplet.
-     * 
-     * @param a First number of the triplet.
-     * @param b Second number of the triplet.
-     * @param c Third number of the triplet.
-     * @return True if (a, b, c) is a Pythagorean triplet, false otherwise.
-     * Time Complexity: O(1)
-     * Space Complexity: O(1)
-     */
+public class PythagoreanTriplet {
+
     // 1st Approach: Direct comparison of squares
+    // Time Complexity: O(1)
+    // Space Complexity: O(1)
     public static boolean isPythagoreanTriplet(int a, int b, int c) {
-        // Calculate the squares of each number
+        
+        // Calculate squares of a, b, and c
         int x = a * a;
         int y = b * b;
         int z = c * c;
@@ -28,17 +21,33 @@ public class PythagoreanTripletChecker {
 
         return ans;
     }
-  
+
+    /* 
+    // 2nd Approach: Using properties of Pythagorean triplet
+    // Time Complexity: O(1)
+    // Space Complexity: O(1)
+    public static boolean isPythagoreanTriplet(int a, int b, int c) {
+        
+        // Find minimum, maximum, and middle value
+        int min = Math.min(Math.min(a, b), c);
+        int max = Math.max(Math.max(a, b), c);
+        int middle = a + b + c - min - max;
+
+        // Check the Pythagorean triplet condition
+        return ((min * min + middle * middle) == (max * max));
+    }
+    */
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Prompt user to input three numbers
+        // Prompt user for input
         System.out.print("Enter 3 numbers: ");
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
         
-        // Check if the triplet (a, b, c) is a Pythagorean triplet using the function
+        // Check if the entered triplet is a Pythagorean triplet using the chosen approach
         if (isPythagoreanTriplet(a, b, c)) {
             System.out.println("The triplet (" + a + ", " + b + ", " + c + ") is a Pythagorean triplet.");
         } 
