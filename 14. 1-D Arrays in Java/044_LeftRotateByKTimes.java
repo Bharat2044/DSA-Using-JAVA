@@ -1,17 +1,19 @@
 public class LeftRotateByKTimes {
    
-    // printing the arrays
+    // Method to print the elements of an array
     public static void printArray(int[] arr) {
-      
-        for (int i = 0; i < arr.length; i++)
+        // Iterate through the array and print each element followed by spaces
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + "   ");
-            
+        }
+       
+        // Move to the next line after printing all elements
         System.out.println();
     } 
     
-    /*
+    /*    
     // Approach - 1: Using Rotate One by One => TC = O(n * k), SC = O(1)
-     public static void leftRotateByOne(int[] arr) {
+    public static void leftRotateByOne(int[] arr) {
         // Length of the array
         int n = arr.length;
         
@@ -41,8 +43,6 @@ public class LeftRotateByKTimes {
     }
     */
     
-    
-
     /*    
     // Approach - 2: Using Auxiliary Array => TC = O(n), SC = O(n)
     public static void leftRotateByKPosition(int[] arr, int k) {
@@ -77,8 +77,7 @@ public class LeftRotateByKTimes {
     }
     */
     
-    
-    /*
+    /*    
     // Approach - 3: Using Auxiliary Array => TC = O(n), SC = O(k)
     public static void leftRotateByKPosition(int[] arr, int k) {
         // Size of the array
@@ -106,7 +105,22 @@ public class LeftRotateByKTimes {
         }
     }
     */
+   
     
+    // Method to reverse elements in an array from index `s` to `e`
+    public static void reverse(int[] arr, int s, int e) {
+        // Iterate through the array and swap elements from start to end
+        while (s < e) {
+            // Swap elements at indices `s` and `e`
+            int temp = arr[s];
+            arr[s] = arr[e];
+            arr[e] = temp;
+            
+            // Move `s` towards the end and `e` towards the start
+            s++;
+            e--;
+        }
+    }    
     
     // Approach - 4: By Reversing Array => TC = O(n), SC = O(1)
     public static void leftRotateByKPosition(int[] arr, int k) {
@@ -125,31 +139,22 @@ public class LeftRotateByKTimes {
         // Reverse the whole array
         reverse(arr, 0, n - 1);
     }
-    
-    public static void reverse(int[] arr, int s, int e) {
-        while (s < e) {
-            // Swap elements at indices `s` and `e`
-            int temp = arr[s];
-            arr[s] = arr[e];
-            arr[e] = temp;
-            
-            // Move `s` towards the end and `e` towards the start
-            s++;
-            e--;
-        }
-    }
 
 
     public static void main(String[] args) {
+        // Initialize an array `arr` and an integer `k` for rotation
         int[] arr = {1, 2, 3, 4, 5, 6, 7};
         int k = 4;
 
-        System.out.println("Before left rotate by k position array are:");
+        // Print the array before rotation
+        System.out.println("Before left rotate by k position array:");
         printArray(arr);
         
+        // Perform left rotation of the array `arr` by `k` positions
         leftRotateByKPosition(arr, k);
 
-        System.out.println("\nAfter left rotate by k position array are:");
+        // Print the array after rotation
+        System.out.println("\nAfter left rotate by k position array:");
         printArray(arr);
     }
 }
