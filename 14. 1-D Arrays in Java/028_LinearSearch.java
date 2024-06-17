@@ -2,7 +2,12 @@ import java.util.Scanner;
 
 public class LinearSearch {
   
-    // Approach - 1: Using Loops => TC = O(n), SC = O(1)
+    /**
+     * Linear Search => TC = O(n), SC = O(1)
+     * This approach iterates through the array to find the element.
+     * Time Complexity: O(n) - each element is checked until the target is found or the end of the array is reached.
+     * Space Complexity: O(1) - uses constant space for variables.
+     */
     /*
     public static int linearSearch(int[] arr, int key) {
     
@@ -20,7 +25,12 @@ public class LinearSearch {
     }
     */
     
-    // Approach - 2: Using Recursion => TC = O(n), SC = O(n)
+    /**
+     * Approach - 2: Using Recursion => TC = O(n), SC = O(n)
+     * This approach uses recursion to perform a linear search.
+     * Time Complexity: O(n) - each element is checked until the target is found or the end of the array is reached.
+     * Space Complexity: O(n) - due to recursive calls on the stack.
+     */
     // Helper method for recursion
     public static int helper(int[] arr, int i, int key) {
         // Base case: if index reaches array length, key is not found
