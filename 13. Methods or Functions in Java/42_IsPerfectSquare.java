@@ -3,7 +3,7 @@ Problem Description:
 You are given a function that takes an integer argument A. Return 1 if A is a perfect square otherwise return 0.
 
 Problem Constraints:
-1 <= A <= 108
+1 <= A <= 10^8
 
 Input Format:
 First argument is an integer A.
