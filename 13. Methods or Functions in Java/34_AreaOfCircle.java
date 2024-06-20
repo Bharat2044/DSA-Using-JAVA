@@ -38,19 +38,35 @@ import java.util.Scanner;
 
 public class AreaOfCircle { 
 
+    /*
+     * Method to calculate the area of a circle given its radius and return the ceiling value
+     * Time Complexity: O(1) as it performs a constant number of operations
+     * Space Complexity: O(1) as it uses a constant amount of extra space
+     */
     public static int areaOfCircle(int r) {
-        int ans = (int)((3.14 * r * r) + 1);
-        return ans;
+        // Calculate the area of the circle using the formula π * r^2
+        double area = Math.PI * r * r;
+        // Return the ceiling value of the calculated area
+        return (int) Math.ceil(area);
     }
     
     public static void main(String[] args) {   
+        // Create a Scanner object for input
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Enter radius of the circle: ");
+        // Prompt the user to enter the radius of the circle
+        System.out.print("Enter radius of the circle: ");
+        
+        // Read the radius as an integer
         int r = sc.nextInt();        
         
+        // Compute the area of the circle using the areaOfCircle method
         int ans = areaOfCircle(r);
         
+        // Print the calculated area
         System.out.println("Area of circle = " + ans);
+        
+        // Close the scanner
+        sc.close();
     }
 }
