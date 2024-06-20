@@ -36,24 +36,41 @@ Volume of sphere having radius 4 units = 268.08 Ceil value of volume = 269
 
 
 
+
 import java.util.Scanner;
 
 public class VolumeOfSphere { 
 
+    /*
+     * Method to calculate the volume of a sphere given its radius and return the ceiling value
+     * Time Complexity: O(1) as it performs a constant number of operations
+     * Space Complexity: O(1) as it uses a constant amount of extra space
+     */
     public static int volumeOfSphere(int r) {
-        int ans = (int)(((4 * 3.1415 * r * r * r) / 3) + 1);
-        return ans;
+        // Calculate the volume of the sphere using the formula (4/3) * π * r^3
+        double volume = (4.0 / 3.0) * Math.PI * Math.pow(r, 3);
+        
+        // Return the ceiling value of the calculated volume
+        return (int) Math.ceil(volume);
     }
     
     public static void main(String[] args) {   
+        // Create a Scanner object for input
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Enter radius of the sphere: ");
+        // Prompt the user to enter the radius of the sphere
+        System.out.print("Enter radius of the sphere: ");
+        
+        // Read the radius as an integer
         int r = sc.nextInt();        
         
+        // Compute the volume of the sphere using the volumeOfSphere method
         int ans = volumeOfSphere(r);
         
+        // Print the calculated volume
         System.out.println("Volume of sphere = " + ans);
+        
+        // Close the scanner
+        sc.close();
     }
 }
-
