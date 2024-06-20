@@ -4,7 +4,7 @@ public class Shadowing {
     public static void main(String[] args) {
         System.out.println(x); // 90
         int x; 
-        
+         
         // System.out.println(x); // Shadowing.java:8: error: variable x might not have been initialized
         
         x = 40;
