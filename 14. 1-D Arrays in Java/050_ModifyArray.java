@@ -44,7 +44,7 @@ A[4] + 3 = 1 + 3 = 4
 
 import java.util.Scanner;
 
-public class EvenOddElements {
+public class ModifyArray {
     /**
      * Modifies the given array by adding the integer b to each element.
      * 
