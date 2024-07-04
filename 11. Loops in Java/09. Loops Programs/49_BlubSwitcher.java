@@ -1,4 +1,5 @@
 // Question Link: https://leetcode.com/problems/bulb-switcher/description/
+// Solution Link: https://leetcode.com/problems/bulb-switcher/solutions/5414324/all-5-approaches-in-java-optimal-better-and-brute-approach-beats-100-runtime-0ms/
 
 
 class Solution {
