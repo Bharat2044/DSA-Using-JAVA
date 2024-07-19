@@ -9,52 +9,61 @@ o/p:
   *   * *
 * *   * *
 * * * * *
-
 */
 
 
 import java.util.Scanner;
 
 public class BarChart {
+  
+    // Function to find the maximum height in the array - TC = O(n), SC = O(1)
+    public static int maxHeight(int[] arr) {
+        int max = arr[0]; // Initialize max with the first element
+        
+        // Traverse the array to find the maximum value
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i]; // Update max if a larger value is found
+            }
+        }
+        
+        return max; // Return the maximum height
+    }
+  
+    // Function to print the bar chart - TC = O(n * maxHeight), SC = O(1)
+    public static void printBarChart(int[] arr) {
+        int max = maxHeight(arr); // Get the maximum height
+        
+        // Loop from the maximum height down to 1
+        for(int ht = max; ht >= 1; ht--) {
+            // Check each bar at the current height level
+            for(int i = 0; i < arr.length; i++) {
+                if(arr[i] >= ht) // If bar height is at least current height level
+                    System.out.print("* "); // Print a star
+                else
+                    System.out.print("  "); // Otherwise, print spaces
+            }
+            
+            System.out.println(); // Move to the next line after each height level
+        }
+    }
+    
     public static void main(String[] args) {   
         Scanner sc = new Scanner(System.in);
         
-        // Input the number of bars (columns) in the bar chart
+        // Read the number of bars in the bar chart
         int n = sc.nextInt();
         
-        // Initialize an array to store heights of bars
+        // Create an array to store the heights of the bars
         int[] arr = new int[n];
         
-        // Input heights of each bar
+        // Populate the array with bar heights from user input
         for(int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
         
-        // Finding the maximum height among all bars
-        int max = arr[0];
-        for(int i = 1; i < arr.length; i++) {
-            if(arr[i] > max)
-                max = arr[i];
-        }
+        printBarChart(arr); // Call function to print the bar chart
         
-        // Printing the bar chart
-        // Each row corresponds to a height level from max to 1
-        for(int ht = max; ht >= 1; ht--) {
-            // Traverse each column (bar) for the current height level
-            for(int i = 0; i < arr.length; i++) {
-                // If the current bar height is >= current height level, print "* "
-                if(arr[i] >= ht)
-                    System.out.print("* ");
-                // Otherwise, print spaces to maintain alignment
-                else
-                    System.out.print("  ");
-            }
-            
-            // Move to the next line for the next height level
-            System.out.println();
-        }
-        
-        // Close the scanner object to prevent resource leak
-        sc.close();
+        sc.close(); // Close the scanner to prevent resource leak
     }
 }
