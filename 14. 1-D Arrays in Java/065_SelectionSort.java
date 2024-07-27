@@ -107,3 +107,9 @@ public class SelectionSort {
         sc.close(); // Close the Scanner to free resources
     }
 }
+
+
+
+// Note: Selection Sort is Inplace Sorting, but not Stable Algorithm.
+// Inplace Sorting: Not taking any extra space
+// Stable Algorithm: Order Precedence not follow if 2 same elements here.
