@@ -39,7 +39,15 @@ public class SelectionSort {
         }
     }
     */
+
     
+    // Public method to initiate selection sort
+    // 2nd Approach: Using Recursion - Time Complexity = O(n^2), Space Complexity = O(n) due to recursion stack
+    static void selectionSort(int[] arr) {
+        
+        // Call the helper method starting from index 0
+        selectionSortHelper(arr, 0); 
+    }
     
     // Recursive helper method to perform selection sort
     private static void selectionSortHelper(int[] arr, int startIdx) {
@@ -53,6 +61,7 @@ public class SelectionSort {
         
         // Iterate through the unsorted elements
         for (int j = startIdx + 1; j < arr.length; j++) {
+            
             // Update minIdx if a smaller element is found
             if (arr[j] < arr[minIdx]) {
                 minIdx = j;
@@ -68,14 +77,6 @@ public class SelectionSort {
         
         // Recursively call selectionSortHelper for the next starting index
         selectionSortHelper(arr, startIdx + 1);
-    }
-    
-    // Public method to initiate selection sort
-    // 2nd Approach: Using Recursion - Time Complexity = O(n^2), Space Complexity = O(n) due to recursion stack
-    static void selectionSort(int[] arr) {
-        
-        // Call the helper method starting from index 0
-        selectionSortHelper(arr, 0); 
     }
 
     public static void main(String args[]) {
