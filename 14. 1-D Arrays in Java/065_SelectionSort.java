@@ -11,7 +11,7 @@ public class SelectionSort {
         }
         // Print a newline after printing all elements
         System.out.println();
-    }
+    } 
     
     /*
     // Method to perform selection sort on the array
