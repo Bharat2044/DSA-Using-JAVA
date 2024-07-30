@@ -86,9 +86,10 @@ public class SelectionSort {
         System.out.print("Enter size of the array: "); 
         int n = sc.nextInt(); // Read the size of the array
 
-        int[] arr = new int[n]; // Initialize the array with the specified size
+        // Initialize the array with the specified size
+        int[] arr = new int[n]; 
         
-        System.out.print("Enter array elements: "); 
+        System.out.println("Enter array elements: "); 
         // taking array user input
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
@@ -104,8 +105,9 @@ public class SelectionSort {
         System.out.println("After selection sort:"); 
         // Print array after sorting
         printArrayElements(arr);
-        
-        sc.close(); // Close the Scanner to free resources
+
+        // Close the Scanner to free resources
+        sc.close(); 
     }
 }
 
