@@ -4,13 +4,28 @@ public class SelectionSort {
     
     // Method to print elements of the array - Time Complexity = O(n), Space Complexity = O(1)
     static void printArrayElements(int[] arr) {
+      
         // Iterate through the array elements
         for (int i = 0; i < arr.length; i++) {
             // Print each element followed by a space
             System.out.print(arr[i] + " ");
         }
+        
         // Print a newline after printing all elements
         System.out.println();
+    } 
+    
+    // Helper method to swap two elements in the array - Time Complexity = O(1), Space Complexity = O(1)
+    public static void swap(int[] arr, int i, int j) {
+        // Swap by using 3rd variable
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    
+        // Swap without 3rd variable
+        // arr[i] = arr[i] ^ arr[j];
+        // arr[j] = arr[i] ^ arr[j];
+        // arr[i] = arr[i] ^ arr[j];
     } 
     
     /*
@@ -50,17 +65,17 @@ public class SelectionSort {
     }
     
     // Recursive helper method to perform selection sort
-    private static void selectionSortHelper(int[] arr, int startIdx) {
-        // Base case: If startIdx reaches the end of the array, return
-        if (startIdx >= arr.length - 1) {
+    private static void selectionSortHelper(int[] arr, int i) {
+        // Base case: If i reaches the end of the array, return
+        if (i >= arr.length - 1) {
             return;
         }
         
         // Assume the current position is the minimum
-        int minIdx = startIdx;
+        int minIdx = i;
         
         // Iterate through the unsorted elements
-        for (int j = startIdx + 1; j < arr.length; j++) {
+        for (int j = i + 1; j < arr.length; j++) {
             
             // Update minIdx if a smaller element is found
             if (arr[j] < arr[minIdx]) {
@@ -68,15 +83,13 @@ public class SelectionSort {
             }
         }
         
-        // Swap the smallest element with the minIdx index value if minIdx is not equal to startIdx
-        if (minIdx != startIdx) {
-            int temp = arr[minIdx]; 
-            arr[minIdx] = arr[startIdx];
-            arr[startIdx] = temp;
+        // Swap the smallest element with the minIndex index value if minIndex is not equal to currentIndex
+        if (minIdx != i) {
+            swap(arr, i, minIdx);
         }
         
         // Recursively call selectionSortHelper for the next starting index
-        selectionSortHelper(arr, startIdx + 1);
+        selectionSortHelper(arr, i + 1);
     }
 
     public static void main(String args[]) {
