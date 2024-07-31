@@ -28,7 +28,6 @@ public class SelectionSort {
         // arr[i] = arr[i] ^ arr[j];
     } 
     
-    /*
     // Method to perform selection sort on the array
     // 1st Approach: Using Loops - Time Complexity = O(n^2), Space Complexity = O(1)
     static void selectionSort(int[] arr) {
@@ -53,9 +52,9 @@ public class SelectionSort {
             }
         }
     }
-    */
 
-    
+
+    /*
     // Public method to initiate selection sort
     // 2nd Approach: Using Recursion - Time Complexity = O(n^2), Space Complexity = O(n) due to recursion stack
     static void selectionSort(int[] arr) {
@@ -91,6 +90,7 @@ public class SelectionSort {
         // Recursively call selectionSortHelper for the next starting index
         selectionSortHelper(arr, i + 1);
     }
+    */
 
     public static void main(String args[]) {
         // Create a Scanner object for input
