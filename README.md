@@ -1,5 +1,6 @@
 # **Data Structure and Algorithm (DSA) using JAVA**
-> ### **"This repository contains DSA problem solution codes using Java with different approaches, helping you to master DSA concepts from basic to advanced levels."**
+
+> ### _"This repository contains DSA problem solution codes using Java with different approaches, helping you to master DSA concepts from basic to advanced levels."_
 
 # 🔥 **Clone this Repository** 💫
 
