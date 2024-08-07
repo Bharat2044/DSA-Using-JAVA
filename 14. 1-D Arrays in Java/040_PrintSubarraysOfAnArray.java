@@ -17,7 +17,8 @@ import java.util.Scanner;
 public class PrintSubarraysOfAnArray {
     
     // Method to print all subarrays of the given array
-    // Time Complexity: O(n^3), Space Complexity: O(1)
+    /*
+    // 1st Approach - Time Complexity = O(n^3), Space Complexity = O(1)
     public static void printSubarrays(int[] arr) {
         
         // Iterate over all starting points of subarrays
@@ -32,6 +33,27 @@ public class PrintSubarraysOfAnArray {
                 
                 // Move to the next line after printing a subarray
                 System.out.println();
+            }
+        }
+    }
+    */
+    
+    // 2nd Approach: Time Complexity O(n^2), Space Complexity = O(1)
+    public static void printSubarrays(int[] arr) {
+        int n = arr.length;
+        
+        // Iterate over all starting points of subarrays
+        for(int i = 0; i < n; i++) {
+            // Initialize an empty string to store subarray elements
+            String subarray = "";
+            
+            // Iterate over all ending points of subarrays starting from i
+            for(int j = i; j < n; j++) {
+                // Add the current element to the subarray
+                subarray += arr[j] + " ";
+                
+                // Print the current subarray
+                System.out.println(subarray.trim());
             }
         }
     }
