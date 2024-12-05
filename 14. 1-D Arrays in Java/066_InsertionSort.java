@@ -132,7 +132,6 @@ public class BubbleSort {
 }
 
 
-
 // Note: Insertion Sort is both an in-place sorting and a stable algorithm.
 // In-place Sorting: Does not take any extra space for sorting
 // Stable Algorithm: Maintains the relative order of elements with equal keys or Order Precedence not follow if 2 same elements here.
