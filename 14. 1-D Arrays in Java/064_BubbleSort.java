@@ -9,6 +9,7 @@ public class BubbleSort {
             // Print each element followed by a space
             System.out.print(arr[i] + " ");
         }
+        
         // Print a newline after printing all elements
         System.out.println();
     } 
