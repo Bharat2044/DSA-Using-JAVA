@@ -44,6 +44,7 @@ public class BrokenEconomy {
             if (arr[mid] == data) {
                 floor = arr[mid];
                 ceil = arr[mid];
+              
                 break; // Exit loop if exact match is found
             } else if (arr[mid] > data) {
                 right = mid - 1; // Search in the left half
