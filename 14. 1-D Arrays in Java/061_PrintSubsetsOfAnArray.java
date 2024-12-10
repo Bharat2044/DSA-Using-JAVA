@@ -21,6 +21,7 @@ public class PrintSubsetsOfAnArray {
     // Method to print all subsets of the array
     // Time Complexity (TC): O(n * 2^n), Space Complexity (SC): O(n)
     public static void printSubArrays(int[] arr) {
+        
         int n = arr.length; // Get the length of the array
         
         int limit = (1 << n); // Calculate 2^n for total subsets
