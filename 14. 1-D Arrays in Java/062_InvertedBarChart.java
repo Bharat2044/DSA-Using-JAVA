@@ -16,6 +16,7 @@ public class InvertedBarChart {
   
     // Function to find the maximum height in the array - TC = O(n), SC = O(1)
     public static int maxHeight(int[] arr) {
+     
         int max = arr[0]; // Initialize max with the first element
         
         // Traverse the array to find the maximum value
