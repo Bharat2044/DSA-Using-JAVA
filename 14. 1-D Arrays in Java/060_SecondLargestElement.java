@@ -129,6 +129,7 @@ public class SecondLargestElement {
      * - We use a constant amount of extra space regardless of the input size.
      */
     public static int findSecondLargest(int[] arr) {
+     
         // If array has less than 2 elements, no second largest element exists
         if (arr.length < 2) 
             return -1; // Return -1 indicating no second largest element 
