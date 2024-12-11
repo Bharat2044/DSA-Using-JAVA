@@ -61,6 +61,7 @@ public class MergeTwoSortedArrays {
      * - We create a new array to hold the merged result, which requires space proportional to the sum of the lengths of the input arrays.
      */
     public static int[] mergeArrays(int[] arr, int[] brr) {
+     
         int n1 = arr.length; // Length of array arr
         int n2 = brr.length; // Length of array brr
         
