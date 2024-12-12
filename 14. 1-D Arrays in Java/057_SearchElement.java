@@ -74,6 +74,7 @@ public class SearchElement {
     }
 
     public static void main(String[] args) {
+     
         Scanner sc = new Scanner(System.in);
 
         // Read the number of test cases
