@@ -59,6 +59,7 @@ public class PrintNegativeIntegers {
     }
 
     public static void main(String[] args) {
+        
         // Create a Scanner object to read input from the console
         Scanner sc = new Scanner(System.in);
         
