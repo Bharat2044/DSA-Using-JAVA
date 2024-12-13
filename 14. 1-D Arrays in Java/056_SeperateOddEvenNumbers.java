@@ -79,6 +79,7 @@ public class SeparateOddEvenNumbers {
      */
     /*
     public static void printOddEvenNumbers(int[] arr) {
+    
         // Print odd numbers
         for(int i = 0; i < arr.length; i++) {
             // Check if the number is odd
