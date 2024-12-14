@@ -22,7 +22,7 @@ public class SelectionSort {
         arr[i] = arr[j];
         arr[j] = temp;
     
-        // Swap without 3rd variable
+        // Swap without using 3rd variable
         // arr[i] = arr[i] ^ arr[j];
         // arr[j] = arr[i] ^ arr[j];
         // arr[i] = arr[i] ^ arr[j];
