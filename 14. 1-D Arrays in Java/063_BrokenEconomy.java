@@ -30,6 +30,7 @@ public class BrokenEconomy {
   
     // TC = O(log(n)), SC = O(1)
     public static void brokenEconomy(int[] arr, int data) {
+      
         // Initialize pointers for binary search
         int left = 0, right = arr.length - 1; 
         
