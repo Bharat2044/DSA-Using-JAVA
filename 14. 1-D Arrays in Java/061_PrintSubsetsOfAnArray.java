@@ -28,6 +28,7 @@ public class PrintSubsetsOfAnArray {
         
         // Loop over all possible subsets
         for (int i = 0; i < limit; i++) {
+            
             int dec = i; // Decimal representation of the subset
             
             String ans = ""; // String to store the current subset
