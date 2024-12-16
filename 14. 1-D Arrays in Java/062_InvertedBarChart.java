@@ -21,6 +21,7 @@ public class InvertedBarChart {
         
         // Traverse the array to find the maximum value
         for (int i = 1; i < arr.length; i++) {
+         
             if (arr[i] > max) {
                 max = arr[i]; // Update max if a larger value is found
             }
