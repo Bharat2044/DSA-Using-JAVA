@@ -54,6 +54,7 @@ public class SecondLargestElement {
      */
     /*
     public static int findSecondLargest(int[] arr) {
+    
         // Get the length of the array
         int n = arr.length; 
         
