@@ -92,6 +92,7 @@ public class MergeTwoSortedArrays {
     }
 
     public static void main(String[] args) {
+     
         Scanner sc = new Scanner(System.in); // Create a Scanner object for input
 
         // Read the number of test cases
