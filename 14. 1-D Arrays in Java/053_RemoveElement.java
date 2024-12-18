@@ -44,6 +44,7 @@ public class RemoveElement {
      * Space Complexity: O(n), for storing the new array with the element removed.
      */
     public static int[] removeElement(int[] arr, int x) {
+        
         // Initialize a new array with size one less than the input array
         int[] ans = new int[arr.length - 1];
         
