@@ -43,6 +43,7 @@ public class MaxAndMinElementOfAnArray {
      * Space Complexity: O(1), as no additional space is used other than a few variables.
      */
     public static int[] findMaxAndMin(int[] arr) {
+        
         int max = arr[0]; // Initialize max with the first element of the array
         int min = arr[0]; // Initialize min with the first element of the array
         
