@@ -52,6 +52,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class GoodPairs {
+ 
     /**
      * 1st Approach
      * Checks if there exists a pair of elements in the given array whose sum is equal to b.
