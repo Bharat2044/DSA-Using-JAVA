@@ -38,6 +38,7 @@ public class InvertedBarChart {
         for (int ht = 1; ht <= max; ht++) {
             // Check each bar at the current height level
             for (int i = 0; i < arr.length; i++) {
+             
                 if (arr[i] >= ht) // If bar height is at least current height level
                     System.out.print("* "); // Print a star
                 else
