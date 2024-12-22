@@ -52,6 +52,7 @@ public class PrintSubsetsOfAnArray {
     }
     
     public static void main(String[] args) {
+        
         Scanner sc = new Scanner(System.in); // Create a Scanner object for input
         
         // Read the size of the array
