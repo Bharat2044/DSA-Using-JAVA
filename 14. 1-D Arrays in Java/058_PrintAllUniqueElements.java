@@ -135,6 +135,7 @@ public class PrintAllUniqueElements {
      *   - HashMap space to store elements and their counts can go up to O(n) in the worst case.
      */
     public static void printAllUniqueElements(int[] arr) {
+     
         // HashMap to store element counts
         Map<Integer, Integer> countMap = new HashMap<>();
         
