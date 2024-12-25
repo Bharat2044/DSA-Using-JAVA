@@ -39,6 +39,7 @@ public class BrokenEconomy {
 
         // Perform binary search to find floor and ceiling
         while (left <= right) {
+          
             int mid = (left + right) / 2; // Calculate middle index
             
             // Check if mid element is equal to the target data
