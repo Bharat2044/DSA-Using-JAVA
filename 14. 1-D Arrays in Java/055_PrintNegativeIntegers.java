@@ -6,7 +6,7 @@ Take integer N and N elements of the array as input from user.
 Problem Constraints:
 1 <= N <= 1000
 -1000 <= A <= 1000
-
+ 
 Input Format:
 A single line representing N followed by N integers of the array A
 
