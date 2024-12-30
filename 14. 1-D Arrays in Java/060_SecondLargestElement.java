@@ -6,7 +6,7 @@ Problem Description:
 You are given an integer array A of size n. You have to find the second largest element/value in the array or report that no such element exists.
 
 Problem Constraints:
-0 <= n <= 10^9
+0 <= n <= 10^9 
 1 <= |A| <= 10^5
 0 <= A[i] <= 10^9
 
