@@ -6,7 +6,7 @@ You have to merge the given arrays into a single sorted array.
 Problem Constraints:
 1 <= T <= 10
 1 <= n1, n2 <= 10^5
--10^9 <= A[i], B[i] <= 10^9
+-10^9 <= A[i], B[i] <= 10^9 
 
 Input Format:
 First line of the input contains a single integer T.
