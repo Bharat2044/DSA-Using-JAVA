@@ -10,7 +10,7 @@ Given denominations: [5, 10, 15, 22, 33, 40, 42, 55]
 Foreign request: 25
 Response: Denominations 33 and 22 are available.
 
-Example 2:
+Example 2: 
 Given denominations: [7, 14, 18, 25, 30]
 Foreign request: 18
 Response: Denomination 18 is available.
