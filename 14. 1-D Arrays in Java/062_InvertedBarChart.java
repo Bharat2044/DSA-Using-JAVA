@@ -10,7 +10,7 @@ o/p:
       * *
         *
 */
-
+ 
  
 import java.util.Scanner;
 
