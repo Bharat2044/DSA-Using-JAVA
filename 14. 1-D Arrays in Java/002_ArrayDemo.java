@@ -13,7 +13,9 @@ public class ArrayDemo {
         for(int i = 0; i < arr1.length; i++) {
             System.out.print(arr1[i] + "  "); // Print each boolean value followed by a space
         }
-        System.out.println("\n"); // Print a newline for formatting
+
+        // Print a newline for formatting
+        System.out.println("\n"); 
 
 
         // Example 2: Array of double values
