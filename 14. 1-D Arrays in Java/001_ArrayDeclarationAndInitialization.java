@@ -2,6 +2,7 @@ public class ArrayDeclarationAndInitialization {
 
     // Function to print elements of an integer array
     public static void printArray(int[] arr) {
+        
         // Iterate through the array and print each element followed by a space
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + "  ");
