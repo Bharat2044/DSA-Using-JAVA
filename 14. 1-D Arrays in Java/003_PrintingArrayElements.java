@@ -9,6 +9,7 @@ public class PrintingArrayElements {
         for(int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + "  "); // Print each element followed by a space
         }
+        
         System.out.println("\n"); // Print a newline for formatting
         
         
