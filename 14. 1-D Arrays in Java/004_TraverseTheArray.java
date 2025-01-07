@@ -15,8 +15,9 @@ public class TraverseTheArray {
         for(int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + "  "); // Print each element followed by a space
         }
-        
-        System.out.println(); // Print a newline for formatting
+
+        // Print a newline for formatting
+        System.out.println(); 
     }
     
     
