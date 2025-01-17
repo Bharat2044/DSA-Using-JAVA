@@ -9,7 +9,7 @@ O/p: 3
 
 // Import Scanner class for user input
 import java.util.Scanner; 
-
+ 
 public class SquareRootOfANumber {
 
     /**
