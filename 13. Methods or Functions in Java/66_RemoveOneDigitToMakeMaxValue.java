@@ -21,7 +21,7 @@ public class RemoveOneDigitToMakeMaxValue {
     // Function to find the maximum value by removing one digit
     public static int findMaxValue(int n) {
         // Initialize max to store the maximum value
-        int max = 0; 
+        int max = 0;  
         
         // Calculate the number of digits in the input number
         int noOfDigits = (int) Math.log10(n) + 1; 
