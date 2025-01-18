@@ -32,6 +32,7 @@ public class SelectionSort {
     // Method to perform selection sort on the array
     // 1st Approach: Using Loops - Time Complexity = O(n^2), Space Complexity = O(1)
     static void selectionSort(int[] arr) {
+     
         // Iterate over each element except the last
         for (int i = 0; i < arr.length - 1; i++) {
             // Assume the current position is the minimum
