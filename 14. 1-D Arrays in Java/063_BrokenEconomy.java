@@ -23,7 +23,6 @@ Requirements
 */
 
 
-
 import java.util.Scanner;
 
 public class BrokenEconomy {
