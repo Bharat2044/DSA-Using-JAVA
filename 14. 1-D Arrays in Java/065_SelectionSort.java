@@ -7,7 +7,7 @@ public class SelectionSort {
        
         // Iterate through the array elements
         for (int i = 0; i < arr.length; i++) { 
-            
+             
             // Print each element followed by a space 
             System.out.print(arr[i] + " ");
         }
