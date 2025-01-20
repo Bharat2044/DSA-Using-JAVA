@@ -8,7 +8,7 @@ public class LeftRotateByOnePosition {
       
         System.out.println();
     }
-
+ 
     // Method to left rotate an array by one position
     // Time Complexity: O(n), Space Complexity: O(1)
     public static void leftRotateByOne(int[] arr) {
