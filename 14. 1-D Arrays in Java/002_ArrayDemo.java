@@ -23,9 +23,11 @@ public class ArrayDemo {
 
         // Printing elements of arr2
         System.out.print("Array arr2 elements are: ");
+        
         for(int i = 0; i < arr2.length; i++) {
             System.out.print(arr2[i] + "  "); // Print each double value followed by a space
         }
+        
         System.out.println("\n"); // Print a newline for formatting
 
 
