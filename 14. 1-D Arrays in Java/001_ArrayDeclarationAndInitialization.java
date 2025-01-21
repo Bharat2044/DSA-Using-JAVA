@@ -33,7 +33,6 @@ public class ArrayDeclarationAndInitialization {
         int[] arr4 = new int[5];   // Declaration with size 5, elements initialized to default values (0 for int)
 
         // Printing array elements using the printArray function
-
         System.out.print("Array arr1 elements are: ");
         printArray(arr1);   // Print elements of arr1
 
