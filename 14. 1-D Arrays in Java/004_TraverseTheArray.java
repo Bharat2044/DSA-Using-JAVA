@@ -34,8 +34,9 @@ public class TraverseTheArray {
         for(int ele : arr) {
             System.out.print(ele + "  "); // Print each element followed by a space
         }
-        
-        System.out.println(); // Print a newline for formatting
+
+        // Print a newline for formatting
+        System.out.println(); 
     }
     
     
@@ -50,8 +51,9 @@ public class TraverseTheArray {
         
         // Print the entire array as a string
         System.out.print(Arrays.toString(arr));
-        
-        System.out.println(); // Print a newline for formatting
+
+        // Print a newline for formatting
+        System.out.println();
     }
     
     
@@ -69,11 +71,14 @@ public class TraverseTheArray {
         sp.forEachRemaining((k) -> {
             System.out.print(k + "  "); // Print each element followed by a space
         });
-        
-        System.out.println(); // Print a newline for formatting
+
+        // Print a newline for formatting
+        System.out.println();
     }
   
     public static void main(String[] args) {
+
+        // Create the Scanner Object
         Scanner sc = new Scanner(System.in);
         
         System.out.print("Enter size of the array: ");
@@ -92,7 +97,8 @@ public class TraverseTheArray {
         traverseArrayForEach(arr);
         traverseArrayUsingToString(arr);
         traverseArrayUsingSpliterator(arr);
-        
-        sc.close(); // Close the scanner object
+
+        // Close the scanner object
+        sc.close(); 
     }
 }
