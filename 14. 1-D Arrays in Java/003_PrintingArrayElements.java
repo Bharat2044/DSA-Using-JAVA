@@ -2,6 +2,7 @@ import java.util.*;
 
 public class PrintingArrayElements {
     public static void main(String[] args) {
+        // Array of Integers
         int[] arr = {10, 20, 30 , 40, 50};
         
         // 1. Printing array arr elements using for loop
