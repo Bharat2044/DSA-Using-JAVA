@@ -13,7 +13,7 @@ o/p:
 10	20	-	
 10	20	30
 */
-
+ 
  
 import java.util.Scanner; // Import the Scanner class for user input
 
