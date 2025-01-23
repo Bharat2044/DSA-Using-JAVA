@@ -1,5 +1,5 @@
 public class ArrayDeclarationAndInitialization {
-
+ 
     // Function to print elements of an integer array
     public static void printArray(int[] arr) {
         
