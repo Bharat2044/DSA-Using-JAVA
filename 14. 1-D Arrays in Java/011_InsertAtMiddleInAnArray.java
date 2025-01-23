@@ -7,7 +7,9 @@ public class InsertAtMiddleInAnArray {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + "  "); // Print each element followed by two spaces
         }
-        System.out.println(); // Move to the next line after printing all elements
+
+        // Move to the next line after printing all elements
+        System.out.println(); 
     }
     
     // Function to insert an element at the middle of the array
