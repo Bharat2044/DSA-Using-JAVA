@@ -4,7 +4,7 @@ In a country with a novice government, the economic system uses coins with vario
 Foreign visitors use a money exchanger to get local currency. The exchanger provides the nearest maximum and minimum 
 denominations if the exact one isn't guessed. Denominations are in ascending order.
  
-Examples
+Examples 
 Example 1:
 Given denominations: [5, 10, 15, 22, 33, 40, 42, 55]
 Foreign request: 25  
