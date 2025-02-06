@@ -1,7 +1,7 @@
 import java.util.Scanner;
  
 public class BubbleSort { 
-    
+     
     // Method to print elements of the array - Time Complexity = O(n), Space Complexity = O(1)
     public static void printArrayElements(int[] arr) {
          
