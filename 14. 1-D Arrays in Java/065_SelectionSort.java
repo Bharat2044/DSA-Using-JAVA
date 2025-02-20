@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+ 
 public class SelectionSort { 
           
     // Method to print elements of the array - Time Complexity = O(n), Space Complexity = O(1)
