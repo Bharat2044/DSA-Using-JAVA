@@ -7,7 +7,7 @@ Problem Constraints:
 1 <= T <= 10
 1 <= n1, n2 <= 10^5
 -10^9 <= A[i], B[i] <= 10^9 
- 
+  
 Input Format:
 First line of the input contains a single integer T.
 Next, each of the test case consists of 4 lines:
