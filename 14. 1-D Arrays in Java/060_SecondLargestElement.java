@@ -1,6 +1,6 @@
 // Question Links : GFG => https://practice.geeksforgeeks.org/problems/second-largest3735/1
 
-
+ 
 /*
 Problem Description:
 You are given an integer array A of size n. You have to find the second largest element/value in the array or report that no such element exists.
