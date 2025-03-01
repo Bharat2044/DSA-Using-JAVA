@@ -2,7 +2,7 @@
 Problem Description:
 You are given an integer T (Number of test cases). For each test case, You are given two sorted arrays A and B.
 You have to merge the given arrays into a single sorted array.
-
+ 
 Problem Constraints:
 1 <= T <= 10
 1 <= n1, n2 <= 10^5
