@@ -35,11 +35,13 @@ public class SelectionSort {
      
         // Iterate over each element except the last
         for (int i = 0; i < arr.length - 1; i++) {
+              
             // Assume the current position is the minimum
             int minIdx = i;
             
             // Iterate through the unsorted elements
             for (int j = i + 1; j < arr.length; j++) {
+                  
                 // Update minIdx if a smaller element is found
                 if (arr[j] < arr[minIdx]) {
                     minIdx = j;
