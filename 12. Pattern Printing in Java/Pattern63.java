@@ -12,7 +12,7 @@ n = 5
 16 * * * 20 
 6  7 8 9 10 
 */
- 
+
  
 import java.util.Scanner;
 
