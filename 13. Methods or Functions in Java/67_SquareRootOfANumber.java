@@ -4,7 +4,7 @@ O/p: 1
 i/p: n = 10
 O/p: 3
 */
-
+ 
 
 
 // Import Scanner class for user input
