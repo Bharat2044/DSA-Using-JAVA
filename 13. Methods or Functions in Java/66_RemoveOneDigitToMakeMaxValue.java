@@ -1,5 +1,5 @@
 // Given 4 digits number, remove any one digit and make it largest value
-
+ 
 // i/p: 5343
 // o/p: 534
 
