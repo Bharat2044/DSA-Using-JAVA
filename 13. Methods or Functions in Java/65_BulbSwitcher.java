@@ -1,6 +1,6 @@
 // Question Link: https://leetcode.com/problems/bulb-switcher/
 // Solution Link: https://leetcode.com/problems/bulb-switcher/solutions/5414324/all-5-approaches-in-java-optimal-better-and-brute-approach-beats-100-runtime-0ms/
-
+ 
 class Solution {
 
     // 1st Approach: Brute Force => TC = O(n^2), SC = O(1) -> TLE (Time Limit Exceed)
