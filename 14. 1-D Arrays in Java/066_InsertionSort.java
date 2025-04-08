@@ -71,12 +71,14 @@ public class BubbleSort {
     // Public method to initiate insertion sort
     // 3rd Approach: Using Recursion - Time Complexity = O(n^2), Space Complexity = O(n) due to recursion stack
     public static void insertionSort(int[] arr) {
+    
         // Start the recursive sorting process from the first index
         helperInsertionSort(arr, arr.length);
     }
 
     // Recursive method to perform insertion sort
     private static void helperInsertionSort(int[] arr, int n) {
+    
         // Base case: If the array size is 1 or less, it's already sorted
         if (n <= 1) {
             return;
@@ -102,6 +104,7 @@ public class BubbleSort {
     
 
     public static void main(String args[]) {
+         
         // Create a Scanner object for input
         Scanner sc = new Scanner(System.in); 
         
