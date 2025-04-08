@@ -18,6 +18,7 @@ public class SelectionSort {
     
     // Helper method to swap two elements in the array - Time Complexity = O(1), Space Complexity = O(1)
     public static void swap(int[] arr, int i, int j) {
+          
         // Swap by using 3rd variable
         int temp = arr[i];
         arr[i] = arr[j];
@@ -69,6 +70,7 @@ public class SelectionSort {
     
     // Recursive helper method to perform selection sort
     private static void selectionSortHelper(int[] arr, int i) {
+    
         // Base case: If i reaches the end of the array, return
         if (i >= arr.length - 1) {
             return;
@@ -113,6 +115,7 @@ public class SelectionSort {
         }
         
         System.out.println("Before selection sort:"); 
+          
         // Print array before sorting
         printArrayElements(arr); 
         
@@ -120,6 +123,7 @@ public class SelectionSort {
         selectionSort(arr); 
         
         System.out.println("After selection sort:"); 
+          
         // Print array after sorting
         printArrayElements(arr);
 
