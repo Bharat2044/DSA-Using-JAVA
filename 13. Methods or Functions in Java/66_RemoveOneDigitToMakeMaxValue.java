@@ -11,7 +11,7 @@
 
 // i/p: 8943
 // o/p: 943
-
+ 
  
 
 import java.util.Scanner;
