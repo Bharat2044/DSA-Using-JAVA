@@ -30,13 +30,16 @@ import java.util.Scanner;
 
 public class MultiplyPrevNext {
     // Function to return the updated array as per the problem statement
+    // Time Complexity = O(n), Space Complexity = O(n)
     public static int[] solve(int[] A) {
       
         // Get the length of the array
         int n = A.length;
 
         // If array has only one element, return it as-is
-        if (n == 1) return A;
+        if (n == 1) {
+            return A;
+        }
 
         // Create a new array to store results
         int[] result = new int[n];
