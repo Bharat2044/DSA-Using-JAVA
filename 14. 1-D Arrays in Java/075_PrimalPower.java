@@ -44,8 +44,9 @@ public class PrimalPower {
     // Function to check if a number is prime
     public static boolean isPrime(int x) {
         // Prime numbers are greater than 1, so handle that before calling this
-      
-        for (int i = 2; i * i <= x; i++) { // Loop from 2 to sqrt(x)
+
+        // Loop from 2 to sqrt(x)
+        for (int i = 2; i * i <= x; i++) { 
 
             // If divisible, then not prime
             if (x % i == 0) {  
