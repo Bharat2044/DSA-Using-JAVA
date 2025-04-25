@@ -50,7 +50,9 @@ public class Main {
 
     // Function to reverse elements in the array from index 'left' to 'right'
     public static void reverse(int[] A, int left, int right) {
-        while (left < right) { // Continue while left index is less than right
+
+        // Continue while left index is less than right
+        while (left < right) { 
             int temp = A[left];       // Store value at left index
             A[left] = A[right];       // Replace left with right
             A[right] = temp;          // Set right with original left value
@@ -62,8 +64,12 @@ public class Main {
 
     // Function to perform left rotation by 'k' using reversal algorithm
     public static int[] rotateLeft(int[] A, int k) {
-        int n = A.length;             // Length of the array
-        int[] temp = new int[n];     // Create a copy of array to avoid modifying original
+
+        // Get the length of the array
+        int n = A.length;            
+
+        // Create a copy of array to avoid modifying original
+        int[] temp = new int[n];     
 
         // Copy original array into temp
         for (int i = 0; i < n; i++) {
@@ -84,6 +90,7 @@ public class Main {
 
     // Function to return 2D array after multiple left rotations based on array B
     public static int[][] solve(int[] A, int[] B) {
+        
         int n = A.length;            // Size of array A
         int m = B.length;            // Number of rotations (size of B)
 
