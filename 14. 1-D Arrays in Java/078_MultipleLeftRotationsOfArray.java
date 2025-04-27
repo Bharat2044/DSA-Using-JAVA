@@ -133,8 +133,12 @@ public class Main {
         int[][] result = solve(A, B); // Compute all rotated arrays using solve()
 
         System.out.println("Resulting arrays after rotations:"); // Print result header
-        for (int i = 0; i < m; i++) {         // Loop over each result row
-            for (int j = 0; j < n; j++) {     // Loop over each element in the row
+
+        // Loop over each result row
+        for (int i = 0; i < m; i++) {         
+
+            // Loop over each element in the row
+            for (int j = 0; j < n; j++) {     
                 System.out.print(result[i][j] + " "); // Print element
             }
             
