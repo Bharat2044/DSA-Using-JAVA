@@ -37,6 +37,7 @@ Explanation 2:
 
 
 public class Solution {
+	
 	public long reverse(long A) {
         
             long rev = 0;
