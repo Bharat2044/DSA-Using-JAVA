@@ -1,5 +1,5 @@
 /*
-Multiple left rotations of the array
+Multiple left rotations of the array 
 
 Problem Description:
 Given an array of integers A and multiple values in B, which represents the number of times array A needs to be left rotated.
