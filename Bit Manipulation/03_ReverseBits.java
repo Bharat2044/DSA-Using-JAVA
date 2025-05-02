@@ -38,8 +38,7 @@ Explanation 2:
 
 public class Solution {
 	
-	public long reverse(long A) {
-        
+	public long reverse(long A) {        
             long rev = 0;
 	    
 	    for (int i = 0; i < 32; i++) {
