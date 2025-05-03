@@ -60,7 +60,7 @@ public class Main {
             left++;                   // Move left pointer right
             right--;                  // Move right pointer left
         }
-    }
+    } 
 
     // Function to perform left rotation by 'k' using reversal algorithm
     public static int[] rotateLeft(int[] A, int k) {
