@@ -34,6 +34,7 @@ Explaination 2:
 
 
 public class Solution {
+    
     public int numSetBits(int A) {
         int count = 0;
 
