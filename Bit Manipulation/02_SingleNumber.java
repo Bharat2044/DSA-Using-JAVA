@@ -11,7 +11,7 @@ Problem Constraints:
  
 Input Format:
 The first and only argument of input contains an integer array A.
-
+ 
 Output Format:
 Return a single integer denoting the single element.
 
