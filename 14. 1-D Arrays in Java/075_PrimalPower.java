@@ -88,7 +88,8 @@ public class PrimalPower {
         System.out.print("Enter the number of elements in the array: ");
         int n = sc.nextInt();
 
-        int[] A = new int[n]; // Declare array of size n
+        // Declare array of size n
+        int[] A = new int[n]; 
 
         // Input array elements
         System.out.println("Enter the elements of the array:");
