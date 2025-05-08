@@ -1,4 +1,3 @@
-```java
 /*
 Multiple left rotations of the array 
 
@@ -40,7 +39,7 @@ B[1] = 3 which requires 3 times left rotation
 2: [3, 4, 5, 1, 2]
 2: [4, 5, 1, 2, 4]
 */
-```
+
 
 
 
