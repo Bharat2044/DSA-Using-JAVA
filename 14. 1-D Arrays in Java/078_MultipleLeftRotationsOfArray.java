@@ -54,6 +54,7 @@ public class Main {
 
         // Continue while left index is less than right
         while (left < right) { 
+            // Swap
             int temp = A[left];       // Store value at left index
             A[left] = A[right];       // Replace left with right
             A[right] = temp;          // Set right with original left value
