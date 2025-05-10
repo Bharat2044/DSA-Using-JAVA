@@ -45,7 +45,7 @@ public class Solution {
 
 	        if ((A & (1 << i)) != 0) {
 	            rev |= 1;
-                }
+                } 
 	    }
 	    
 	    return rev;
