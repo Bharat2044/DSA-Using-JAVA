@@ -1,5 +1,5 @@
 /*
- Single Number
+Single Number
 
 Problem Description:
 Given an array of integers A, every element appears twice except for one. Find that integer that occurs once.
