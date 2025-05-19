@@ -59,8 +59,7 @@ public class Solution {
         */
 
         // 3rd Approach
-        for(int i = 0; i < 30; i++){
-            
+        for(int i = 0; i < 30; i++){            
             if((A & (1 << i)) > 0){
                 count++;
             }
