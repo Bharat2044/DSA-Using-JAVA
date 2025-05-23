@@ -118,6 +118,7 @@ public class Main {
         int n = scanner.nextInt(); // Read size of array A
 
         int[] A = new int[n]; // Declare array A
+        
         System.out.println("Enter elements of array A:");
         for (int i = 0; i < n; i++) {
             A[i] = scanner.nextInt(); // Read elements into array A
@@ -127,12 +128,14 @@ public class Main {
         int m = scanner.nextInt(); // Read size of array B
 
         int[] B = new int[m]; // Declare array B
+        
         System.out.println("Enter rotation values (array B):");
         for (int i = 0; i < m; i++) {
             B[i] = scanner.nextInt(); // Read each rotation value into array B
         }
 
-        int[][] result = solve(A, B); // Compute all rotated arrays using solve()
+        // Compute all rotated arrays using solve()
+        int[][] result = solve(A, B); 
 
         System.out.println("Resulting arrays after rotations:"); // Print result header
 
