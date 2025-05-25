@@ -60,6 +60,7 @@ public class PrimalPower {
     // Function to calculate primal power of array
     // Time Complexity = O(n * sqrt(max(A[i]))), Space Complexity = O(1)
     public static int solve(int[] A) {
+     
         // Initialize counter for prime numbers
         int count = 0; 
 
