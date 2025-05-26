@@ -87,7 +87,8 @@ public class Main {
         // Step 3: Reverse the whole array
         reverse(temp, 0, n - 1);
 
-        return temp; // Return rotated array
+        // Return rotated array
+        return temp; 
     }
 
     // Function to return 2D array after multiple left rotations based on array B
