@@ -39,7 +39,8 @@ Explanation 2:
 public class Solution {
  
     // Time Complexity = O(n), Space Complexity = O(1) 
-    public int singleNumber(final int[] A) {     
+    public int singleNumber(final int[] A) {    
+     
         int ans = A[0];
 
         for (int i = 1; i < A.length; i++) {
