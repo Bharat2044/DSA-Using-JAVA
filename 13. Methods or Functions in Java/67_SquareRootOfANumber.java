@@ -35,6 +35,7 @@ public class SquareRootOfANumber {
      * TC: O(log(n)), SC: O(1)
      */
     public static int squareRootBinarySearch(int n) {
+     
         int st = 0; // Initialize the start of the search range
         int end = n; // Initialize the end of the search range
         
