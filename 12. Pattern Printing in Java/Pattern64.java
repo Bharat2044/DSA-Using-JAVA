@@ -40,6 +40,7 @@ public class Pattern64 {
 	        }
 	        
 	        int x = val;
+		    
 	        for (int j = 1; j <= st; j++) {
 	            System.out.print(x + " ");
 	            
