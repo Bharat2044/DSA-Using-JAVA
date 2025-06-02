@@ -24,7 +24,7 @@ o/p:
 
 import java.util.Scanner;
 
-public class Pattern64 {
+public class Pattern64 { 
 	
 	public static void main(String[] args) {
 	    Scanner sc = new Scanner(System.in);
