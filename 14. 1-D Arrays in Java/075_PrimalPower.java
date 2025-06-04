@@ -65,6 +65,7 @@ public class PrimalPower {
         int count = 0; 
 
         for (int i = 0; i < A.length; i++) {
+         
             // Only consider numbers greater than 1
             if (A[i] > 1) { 
 
