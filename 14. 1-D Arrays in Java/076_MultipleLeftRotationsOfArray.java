@@ -97,7 +97,8 @@ public class Main {
         int n = A.length;            // Size of array A
         int m = B.length;            // Number of rotations (size of B)
 
-        int[][] result = new int[m][n]; // Resulting 2D array of size m x n
+        // Resulting 2D array of size m x n
+        int[][] result = new int[m][n]; 
 
         // Loop through each rotation value in B
         for (int i = 0; i < m; i++) {
