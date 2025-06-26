@@ -1,16 +1,16 @@
 /*
-i/p:
+Input:
 n = 5
-o/p:
+Output:
     1 
   2 3 2 
 3 4 5 4 3 
   2 3 2 
     1 
 
-i/p:
+Input:
 n = 7
-o/p:
+Output:
       1 
     2 3 2 
   3 4 5 4 3 
