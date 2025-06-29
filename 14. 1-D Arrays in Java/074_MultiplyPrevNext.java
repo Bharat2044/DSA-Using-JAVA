@@ -44,7 +44,7 @@ public class MultiplyPrevNext {
         // Create a new array to store results
         int[] result = new int[n];
 
-        // First element is product of first and second
+        // First element is product of first and second 
         result[0] = A[0] * A[1];
 
         // Loop through the middle elements
