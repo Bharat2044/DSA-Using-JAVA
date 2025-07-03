@@ -9,7 +9,7 @@ Problem Constraints:
 
 Input Format:
 First and only argument of input contains an integer A.
-
+ 
 Output Format:
 Return a single unsigned integer denoting the decimal value of reversed bits.
 
