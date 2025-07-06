@@ -8,7 +8,7 @@ Given an array of integers A of length N, you have to calculate its Primal Power
 Problem Constraints:
 1 <= N <= 10^3 
 
--10^6 <= A[i] <= 10^6 
+-10^6 <= A[i] <= 10^6
 
 Input Format:
 First and only argument is an integer array A.
