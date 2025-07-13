@@ -9,7 +9,7 @@ Problem Constraints:
 1 <= |A| <= 2000000
 0 <= A[i] <= INTMAX 
   
-Input Format: 
+Input Format:
 The first and only argument of input contains an integer array A.
  
 Output Format:
