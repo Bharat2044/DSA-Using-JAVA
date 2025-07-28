@@ -13,7 +13,7 @@ The first argument given is the integer array A.
 The second argument given is the integer array B.
 
 Output Format:
-Return the resultant matrix.
+Return the resultant matrix. 
  
 Example Input:
 Input 1:
