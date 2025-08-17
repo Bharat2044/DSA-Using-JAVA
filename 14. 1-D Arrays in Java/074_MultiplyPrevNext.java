@@ -8,7 +8,7 @@ The only argument given is the integer array A.
 
 Output Format:
 Return the updated array.
- 
+
 Constraints: 
 1 <= length of the array <= 100000
 -10^4 <= A[i] <= 10^4 
