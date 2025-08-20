@@ -7,7 +7,7 @@ NOTE: Your algorithm should have a linear runtime complexity. Could you implemen
 
 Problem Constraints:
 1 <= |A| <= 2000000  
-0 <= A[i] <= INTMAX 
+0 <= A[i] <= INTMAX
 
 Input Format:
 The first and only argument of input contains an integer array A.
