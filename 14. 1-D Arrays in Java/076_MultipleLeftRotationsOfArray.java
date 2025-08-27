@@ -10,7 +10,7 @@ Problem Constraints:
  
 Input Format: 
 The first argument given is the integer array A.
-The second argument given is the integer array B.
+The second argument given is the integer array B. 
 
 Output Format:
 Return the resultant matrix. 
