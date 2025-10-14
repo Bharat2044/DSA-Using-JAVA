@@ -6,7 +6,7 @@ Given an array of integers A, every element appears twice except for one. Find t
 NOTE: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 
 Problem Constraints: 
-1 <= |A| <= 2000000 
+1 <= |A| <= 2000000
 0 <= A[i] <= INTMAX 
  
 Input Format:
