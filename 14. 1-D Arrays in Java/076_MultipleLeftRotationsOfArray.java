@@ -7,7 +7,7 @@ Find the rotated array for each value and return the result in the from of a mat
 
 Problem Constraints:
 1 <= length of both arrays <= 2000 -10^9 <= A[i] <= 10^9 0 <= B[i] <= 2000 
- 
+
 Input Format: 
 The first argument given is the integer array A.
 The second argument given is the integer array B.
