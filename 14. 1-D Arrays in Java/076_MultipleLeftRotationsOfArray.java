@@ -15,7 +15,7 @@ The second argument given is the integer array B.
 Output Format: 
 Return the resultant matrix. 
  
-Example Input: 
+Example Input:
 Input 1:
     A = [1, 2, 3, 4, 5]
     B = [2, 3]
