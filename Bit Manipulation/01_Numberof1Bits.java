@@ -13,7 +13,7 @@ First and only argument contains integer A
 Output Format:
 Return an integer
 
-Example Input:
+Example Input: 
 Input 1:
 11
 Input 2:
