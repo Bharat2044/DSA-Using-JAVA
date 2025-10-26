@@ -21,7 +21,7 @@ Input 1:
     B = [2, 3]
 Input 2:  
     A = [5, 17, 100, 11]
-    B = [1]
+    B = [1] 
 
 Example Output:
 Output 1:
