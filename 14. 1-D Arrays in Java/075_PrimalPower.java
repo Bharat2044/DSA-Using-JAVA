@@ -16,7 +16,7 @@ First and only argument is an integer array A.
 Output Format: 
 Return the Primal Power of array A.
 
-Example Input:
+Example Input: 
 Input 1:
  A = [-6, 10, 12]
 Input 2:
