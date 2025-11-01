@@ -16,7 +16,7 @@ Output Format:
 Return the resultant matrix. 
  
 Example Input: 
-Input 1: 
+Input 1:
     A = [1, 2, 3, 4, 5]
     B = [2, 3]
 Input 2:  
