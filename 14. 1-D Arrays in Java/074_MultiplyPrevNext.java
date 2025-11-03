@@ -13,7 +13,7 @@ Constraints:
 1 <= length of the array <= 100000
 -10^4 <= A[i] <= 10^4 
  
-For Example: 
+For Example:
 Input 1:
     A = [1, 2, 3, 4, 5]
 Output 1:
