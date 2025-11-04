@@ -6,7 +6,7 @@ Given an array of integers A, update every element with multiplication of previo
 Input Format:
 The only argument given is the integer array A.
 
-Output Format:
+Output Format: 
 Return the updated array.
 
 Constraints: 
