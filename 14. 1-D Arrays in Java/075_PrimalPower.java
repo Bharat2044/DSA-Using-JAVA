@@ -13,7 +13,7 @@ Problem Constraints:
 Input Format:
 First and only argument is an integer array A.
 
-Output Format: 
+Output Format:
 Return the Primal Power of array A.
 
 Example Input: 
