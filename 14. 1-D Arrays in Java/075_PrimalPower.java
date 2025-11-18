@@ -17,7 +17,7 @@ Output Format:
 Return the Primal Power of array A.
 
 Example Input: 
-Input 1:
+Input 1: 
  A = [-6, 10, 12]
 Input 2:
  A = [-11, 7, 8, 9, 10, 11]
