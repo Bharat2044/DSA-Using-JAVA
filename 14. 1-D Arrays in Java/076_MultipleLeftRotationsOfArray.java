@@ -12,7 +12,7 @@ Input Format:
 The first argument given is the integer array A.
 The second argument given is the integer array B.
 
-Output Format: 
+Output Format:
 Return the resultant matrix. 
  
 Example Input: 
