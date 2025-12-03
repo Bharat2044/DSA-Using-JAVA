@@ -10,7 +10,7 @@ Problem Constraints:
  
 -10^6 <= A[i] <= 10^6 
   
-Input Format:
+Input Format: 
 First and only argument is an integer array A.
 
 Output Format: 
