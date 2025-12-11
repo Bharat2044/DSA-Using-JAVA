@@ -5,7 +5,7 @@ Problem Description:
 "Primal Power" of an array is defined as the count of prime numbers present in it.
 Given an array of integers A of length N, you have to calculate its Primal Power.
 
-Problem Constraints: 
+Problem Constraints:
 1 <= N <= 10^3
  
 -10^6 <= A[i] <= 10^6 
