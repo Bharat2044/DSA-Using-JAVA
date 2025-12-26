@@ -1,7 +1,7 @@
 /*
 Primal Power
 
-Problem Description:
+Problem Description: 
 "Primal Power" of an array is defined as the count of prime numbers present in it.
 Given an array of integers A of length N, you have to calculate its Primal Power.
 
