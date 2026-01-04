@@ -19,7 +19,8 @@ Output: 5
 
 
 
-import java.util.*; // Imports all utility classes like Scanner, Stack, etc.
+// Imports all utility classes like Scanner, Stack, etc.
+import java.util.*; 
 
 public class CountLeadersInArray { 
 
@@ -32,7 +33,7 @@ public class CountLeadersInArray {
     ----------------------------------------------------
     */
     /*
-    public static int leadersCount(int[] arr) { // Method to count leaders using brute force
+    public static int leadersCount(int[] arr) { 
 
         int n = arr.length; // Store the size of the array
         int count = 0; // Variable to count leaders
@@ -69,7 +70,7 @@ public class CountLeadersInArray {
     ----------------------------------------------------
     */
     /*
-    public static int leadersCount(int[] arr) { // Method to count leaders using stack
+    public static int leadersCount(int[] arr) { 
         Stack<Integer> stack = new Stack<>(); // Stack to store leader elements
 
         // Traverse array from right to left
@@ -99,12 +100,12 @@ public class CountLeadersInArray {
         int n = arr.length; // Store array length
         int max = arr[n - 1]; // Last element is always a leader, initialize max
 
-        int count = 1; // Count starts from 1 because last element is a leader
+        int count = 1; // Count starts from 1 because the last element is a leader
 
         // Traverse array from second last element to first
         for (int i = n - 2; i >= 0; i--) {
 
-            // If current element is greater than max element on right
+            // If the current element is greater than the max element on the right
             if (arr[i] > max) {
                 count++; // Increase leader count
                 max = arr[i]; // Update max to current element
@@ -122,8 +123,8 @@ public class CountLeadersInArray {
     */
     public static void main(String[] args) { // Program execution starts here
 
-        Scanner sc = new Scanner(System.in); // Scanner object for user input
-
+        // Scanner object for user input
+        Scanner sc = new Scanner(System.in);
         // Read array size from user
         System.out.print("Enter size of the array: ");
         int n = sc.nextInt(); // Store array size
@@ -136,7 +137,8 @@ public class CountLeadersInArray {
             arr[i] = sc.nextInt(); // Store each element in array
         }
 
-        int result = leadersCount(arr); // Call method to count leaders
+        // Call the leadersCount method to count leaders and store into a result variable
+        int result = leadersCount(arr); 
 
         // Print the result
         System.out.println("Number of leaders: " + result);
