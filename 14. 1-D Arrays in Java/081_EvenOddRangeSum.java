@@ -1,6 +1,4 @@
 /*
-Problem Statement
-
 Given an array of size n and Q queries. Each queries can be two types:
 If type 1: Find the sum of elements present at even indices between index s and e (inclusive).
 If type 2: Find the sum of elements present at odd indices between index s and e (inclusive).
@@ -152,6 +150,7 @@ public class EvenOddRangeSum {
             int e = sc.nextInt();    // End index
             int type = sc.nextInt(); // Query type
 
+            // Call the rangeIndexSum method and store the result in a result variable
             int result = rangeIndexSum(arr, s, e, type);
 
             // Print result
