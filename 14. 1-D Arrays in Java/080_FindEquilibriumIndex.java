@@ -210,7 +210,7 @@ public class FindEquilibriumIndex {
 
     /*
     ----------------------------------------------------
-    main method
+    main method - Program execution starts from here
     ----------------------------------------------------
     */
     public static void main(String[] args) {
