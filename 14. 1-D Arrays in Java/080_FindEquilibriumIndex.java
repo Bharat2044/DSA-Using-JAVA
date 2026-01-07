@@ -6,7 +6,7 @@ An index is called an equilibrium index if the sum of all elements to the left o
 Input: arr[] = {1, 2, 3, 4, 8, 10}
 Output: 4
 Explanation:
-For index 4 (value = 8):
+For index 4 (value = 8): 
 Left side elements = {1, 2, 3, 4} → sum = 10
 Right side elements = {10} → sum = 10
 Since both sums are equal, index 4 is an equilibrium index.
