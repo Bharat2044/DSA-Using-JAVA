@@ -34,30 +34,30 @@ Explanation 2:
 
 
 
-import java.util.Scanner;
+import java.util.Scanner; // Import Scanner class for taking input
 
-public class CheckPrime {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
+public class CheckPrime { // Class declaration
+    public static void main(String[] args) { // Main method starts
+        Scanner sc = new Scanner(System.in); // Create Scanner object
+        int a = sc.nextInt(); // Read input number
         
         /*
         // 1st Approach => TC = O(a), SC = O(1)
-        if(a == 1) {
-            System.out.println("NO");
+        if(a == 1) { // If number is 1 (not prime)
+            System.out.println("NO"); // Print NO
         }
         else {
-            boolean flag = true;
-            for(int i=2; i<=a-1; i++) {
-                if(a%i == 0) {
-                    System.out.println("NO");
-                    flag = false;
-                    break;
+            boolean flag = true; // Assume number is prime
+            for(int i=2; i<=a-1; i++) { // Check divisibility from 2 to a-1
+                if(a%i == 0) { // If divisible
+                    System.out.println("NO"); // Not a prime
+                    flag = false; // Mark as not prime
+                    break; // Exit loop
                 }
             }  
         
-            if(flag) {
-                System.out.println("YES");
+            if(flag) { // If no divisor found
+                System.out.println("YES"); // Prime number
             }
         }
         */
@@ -65,21 +65,21 @@ public class CheckPrime {
         
         /*
         // 2nd Approach => TC = O(a/2) = O(a), SC = O(1)
-        if(a == 1) {
-            System.out.println("NO");
+        if(a == 1) { // If number is 1
+            System.out.println("NO"); // Not prime
         }
         else {
-            boolean flag = true;
-            for(int i=2; i<=a/2; i++) {
-                if(a%i == 0) {
-                    System.out.println("NO");
-                    flag = false;
-                    break;
+            boolean flag = true; // Assume prime
+            for(int i=2; i<=a/2; i++) { // Check till a/2
+                if(a%i == 0) { // If divisible
+                    System.out.println("NO"); // Not prime
+                    flag = false; // Update flag
+                    break; // Stop checking
                 }
             }  
         
-            if(flag) {
-                System.out.println("YES");
+            if(flag) { // If still prime
+                System.out.println("YES"); // Print YES
             }
         }
         */
@@ -87,45 +87,45 @@ public class CheckPrime {
         
         /*
         // 3rd Approach => TC = O(sqrt(a)), SC = O(1)
-        if(a == 1) {
-            System.out.println("NO");
+        if(a == 1) { // 1 is not prime
+            System.out.println("NO"); // Print NO
         }
         else {
-            boolean flag = true;
-            for(int i=2; i*i<=a; i++) {
-                if(a%i == 0) {
-                    System.out.println("NO");
-                    flag = false;
-                    break;
+            boolean flag = true; // Assume prime
+            for(int i=2; i*i<=a; i++) { // Loop till sqrt(a)
+                if(a%i == 0) { // If divisible
+                    System.out.println("NO"); // Not prime
+                    flag = false; // Mark false
+                    break; // Exit loop
                 }
             }  
         
-            if(flag) {
-                System.out.println("YES");
+            if(flag) { // If no divisor found
+                System.out.println("YES"); // Prime
             }
         }
         */
         
         
         // 4th Approach => TC = O(sqrt(a)), SC = O(1)
-        if(a == 2 || a == 3) {
-            System.out.println("YES");
+        if(a == 2 || a == 3) { // 2 and 3 are prime numbers
+            System.out.println("YES"); // Print YES
         }
-        else if(a == 1 || a%2 == 0 || a%3 == 0) {
-            System.out.println("NO");
+        else if(a == 1 || a%2 == 0 || a%3 == 0) { // If 1 or divisible by 2 or 3
+            System.out.println("NO"); // Not prime
         }
         else {
-            boolean flag = true;
-            for(int i=5; i*i<=a; i+=6) {
-                if(a%i == 0 || a%(i+2) == 0) {
-                    System.out.println("NO");
-                    flag = false;
-                    break;
+            boolean flag = true; // Assume prime
+            for(int i=5; i*i<=a; i+=6) { // Check numbers of form 6k±1
+                if(a%i == 0 || a%(i+2) == 0) { // If divisible by i or i+2
+                    System.out.println("NO"); // Not prime
+                    flag = false; // Update flag
+                    break; // Exit loop
                 }
             }  
         
-            if(flag) {
-                System.out.println("YES");
+            if(flag) { // If still prime
+                System.out.println("YES"); // Print YES
             }
         }
     }
