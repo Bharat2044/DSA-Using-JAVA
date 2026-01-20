@@ -43,74 +43,108 @@ For the first test case A = 3, the answer is "NO" as sum of its proper divisors 
 
 
     
-import java.util.Scanner;
+import java.util.Scanner; // Import Scanner class for taking input
 
-public class CheckPerfectNumber {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
+public class CheckPerfectNumber { // Class declaration
+    public static void main(String[] args) { // Main method start
+        Scanner sc = new Scanner(System.in); // Create Scanner object
+        int t = sc.nextInt(); // Read number of test cases
         
         /*
-        // 1st Approach => TC = O(t * n), SC = O(1)
-        for(int m=1; m<=t; m++) {
-            int n = sc.nextInt();
-            int sum = 0;
+        ----------------------------------------------------
+        1st Approach: Brute Force
+        ----------------------------------------------------
+        Idea:
+        - For each number, check all values from 1 to n-1
+        - Sum all divisors except the number itself
+        ----------------------------------------------------
+        Time Complexity  : O(t * n)
+        Space Complexity : O(1)
+        ----------------------------------------------------
+        */
+        /*
+        for(int m = 1; m <= t; m++) { // Loop through test cases
+            int n = sc.nextInt(); // Read number
+            int sum = 0; // Store sum of divisors
 
-            for (int i = 1; i < n; i++) {
-                if (n % i == 0) 
-                    sum += i;
+            for (int i = 1; i < n; i++) { // Check all numbers from 1 to n-1
+                if (n % i == 0) // If i is a divisor
+                    sum += i; // Add divisor to sum
             }
         
-            if (sum == n) {
-                System.out.println("YES");
+            if (sum == n) { // If sum of divisors equals n
+                System.out.println("YES"); // Perfect number
             }
             else {
-                System.out.println("NO");
+                System.out.println("NO"); // Not a perfect number
             }
         }
         */
         
         
         /*
-        // 2nd Approach => TC = O(t * n/2) = O(t * n), SC = O(1)
-        for(int m=1; m<=t; m++) {
-            int n = sc.nextInt();
-            int sum = 0;
+        ----------------------------------------------------
+        2nd Approach: Optimized Brute Force
+        ----------------------------------------------------
+        Idea:
+        - A number cannot have a divisor greater than n/2
+        - Reduce unnecessary iterations
+        ----------------------------------------------------
+        Time Complexity  : O(t * n/2) ≈ O(t * n)
+        Space Complexity : O(1)
+        ----------------------------------------------------
+        */
+        /*
+        for(int m = 1; m <= t; m++) { // Loop through test cases
+            int n = sc.nextInt(); // Read number
+            int sum = 0; // Store sum of divisors
 
-            for (int i = 1; i <= n/2; i++) {
-                if (n % i == 0) 
-                    sum += i;
+            for (int i = 1; i <= n / 2; i++) { // Check till n/2
+                if (n % i == 0) // If i divides n
+                    sum += i; // Add divisor
             }
         
-            if (sum == n) {
-                System.out.println("YES");
+            if (sum == n) { // Check perfect number condition
+                System.out.println("YES"); // Perfect number
             }
             else {
-                System.out.println("NO");
+                System.out.println("NO"); // Not perfect
             }
         }
         */
         
         
-        // 3rd Approach => TC = O(t * sqrt(n)), SC = O(1)
-        for(int m=1; m<=t; m++) {
-            int n = sc.nextInt();
-            int sum = 1;
+        /*
+        ----------------------------------------------------
+        3rd Approach: Optimized using sqrt(n)
+        ----------------------------------------------------
+        Idea:
+        - Divisors come in pairs (i, n/i)
+        - Loop only till sqrt(n)
+        - Add both divisors at once
+        ----------------------------------------------------
+        Time Complexity  : O(t * sqrt(n))
+        Space Complexity : O(1)
+        ----------------------------------------------------
+        */
+        for(int m = 1; m <= t; m++) { // Loop through test cases
+            int n = sc.nextInt(); // Read number
+            int sum = 1; // Start with 1 (1 is always a divisor)
 
-            for (int i=2; i*i<=n; i++) {
-                if (n%i == 0) {
-                    sum += i;
+            for (int i = 2; i * i <= n; i++) { // Loop till sqrt(n)
+                if (n % i == 0) { // If i is a divisor
+                    sum += i; // Add divisor i
                     
-                    if (i*i != n)
-                        sum += n/i;
+                    if (i * i != n) // If paired divisor is different
+                        sum += n / i; // Add paired divisor
                 }
             }
         
-            if (sum == n) {
-                System.out.println("YES");
+            if (sum == n) { // Check perfect number condition
+                System.out.println("YES"); // Perfect number
             }
             else {
-                System.out.println("NO");
+                System.out.println("NO"); // Not perfect
             }
         }
     }
