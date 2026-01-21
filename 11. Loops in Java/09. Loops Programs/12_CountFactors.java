@@ -19,6 +19,7 @@ Input 1:
 5
 Input 2:
 10
+
 Example Output:
 Output 1:
 2
