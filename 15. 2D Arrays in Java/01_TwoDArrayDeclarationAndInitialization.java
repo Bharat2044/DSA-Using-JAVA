@@ -18,7 +18,7 @@ public class TwoDArrayDeclarationAndInitialization {
 
     public static void main(String[] args) {
 
-        // ===== Method 1: Separate declaration and initialization =====
+        // Method 1: Separate declaration and initialization
         int[][] arr1;            // Declaration
         arr1 = new int[2][3];    // Initialization with 2 rows and 3 columns
 
@@ -31,25 +31,25 @@ public class TwoDArrayDeclarationAndInitialization {
         arr1[1][2] = 6;
 
 
-        // ===== Method 2: Declaration and initialization in one line =====
+        // Method 2: Declaration and initialization in one line
         int[][] arr2 = {
             {10, 20, 30},
             {40, 50, 60}
         };
 
 
-        // ===== Method 3: Using 'new' keyword with initializer =====
+        // Method 3: Using 'new' keyword with initializer
         int[][] arr3 = new int[][] {
             {70, 80, 90},
             {100, 110, 120}
         };
 
 
-        // ===== Method 4: Declaration with explicit size (default values = 0) =====
+        // Method 4: Declaration with explicit size (default values = 0) 
         int[][] arr4 = new int[2][3];   // All elements initialized to 0
 
 
-        // ===== Printing arrays =====
+        // Printing arrays 
         System.out.println("Array arr1 elements are:");
         print2DArray(arr1);
 
