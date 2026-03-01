@@ -86,14 +86,15 @@ public class CountOfElements {
         int n = arr.length; // Store array length
 
         Arrays.sort(arr); // Sort the array in ascending order
-
-        int count = 1; // Start count from 1 (last element is max)
+        
+        int max = arr[n - 1];
+        int count = 0; // Start count from 0 
 
         // Traverse from second last element backwards
-        for (int i = n - 2; i >= 0; i--) {
+        for (int i = n - 1; i >= 0; i--) {
 
-            // If element is equal to next element (same max value)
-            if (arr[i] == arr[i + 1]) {
+            // If element is equal to max element (same max value)
+            if (arr[i] == max) {
                 count++; // Increase frequency of maximum
             } else {
                 break; // Stop when value changes
